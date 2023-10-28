@@ -21,7 +21,7 @@
 
 <!-- px - 96 py - 32 -->
 <body class="flex justify-center">
-    <div class="w-3/4 max-w-6xl py-16">
+    <div class="w-3/5 max-w-5xl py-16">
         <div>
             <header class="flex justify-between">
                 <h1 class="font-light text-3xl font-sans hover:text-blue-400"> 
@@ -29,163 +29,107 @@
                 </h1>
 
                 <nav class="flex">  
-                    <a href="projects.html" class="hover:text-blue-400 text-xl font-extralight"> Projects </a>   
-                    <a href="cv.html" class="hover:text-blue-400 text-xl font-extralight pl-8"> CV </a> 
+                    <!--<a href="projects.html" class="hover:text-blue-400 text-xl font-extralight"> Projects </a>   
+                    <a href="cv.html" class="hover:text-blue-400 text-xl font-extralight pl-8"> CV </a>
                     <a href="miscellaneous.html" class="hover:text-blue-400 text-xl font-extralight pl-8"> Miscellaneous </a>
+                    -->
+                    <a href="miscellaneous.html" class="hover:text-blue-400 text-xl font-extralight"> Miscellaneous </a>
                 </nav>
             </header>
             
         </div>
         <main class="font-extralight pt-8">
-            <div>
-                Hello! I am a senior at Columbia University. I am broadly interested in theoretical computer science. Most recently, I've enjoyed thinking about sublinear algorithms. In the past, I have worked at Apple and Amazon Web Services as a software intern. In summer 2023, I researched graph theory as part of the <a href="https://math.williams.edu/small/" class="hover:text-blue-400"> SMALL REU </a> program at Williams College. I also enjoy playing and writing music occasionally. Some of my other interests include science fiction novels, table tennis, speed cubing (but without the speed), and movies. Check out my <a href="https://github.com/KrishSingal" class="hover:text-blue-400">github</a>! Feel free to reach out to me at <a href="mailto:krish.singal@columbia.edu" class="hover:text-blue-400">krish.singal@columbia.edu</a>! 
+            <div class="flex">
+                <img style="float:right;" class="flex rounded-lg"  src="Krish copy.jpg" width="250" height="auto" alt="image description">
+
+                <div class="pl-8">
+                    <h4>
+                        Hello! I am a senior at Columbia University. I am broadly interested in theoretical computer science. Most recently, I've enjoyed thinking about sublinear algorithms. 
+                    </h4>
+
+                    <br>
+
+                    <h4>
+                        In the past, I have worked at Apple and Amazon Web Services as a software intern. In summer 2023, I researched graph theory as part of the <a href="https://math.williams.edu/small/" target="_blank" rel="noopener noreferrer" style="color:#3b82f6"> SMALL REU </a> program at Williams College. I'm also currently a mentor for the <a href="https://columbia-ugtcs.github.io/" target="_blank" rel="noopener noreferrer" style="color:#3b82f6"> Columbia Undergraduate Learning Seminar in Theoretical CS </a>.
+                    </h4>
+                        
+                    <br>
+
+                    <h4>
+                        Feel free to reach out to me at {firstname}.{lastname}@columbia.edu. Click here for my <a href="Krish Singal CV.pdf" target="_blank" rel="noopener noreferrer" style="color:#3b82f6">CV</a>. Take a look at some of my work below!
+                    </h4>
+                </div>
+
             </div> 
 
-            <!--
-            <h2 class="my-3 text-xl font-light">
-                Theory
-            </h2>
-            
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Solution Manual: Analysis of Boolean Functions
-                    </div>
-
-                    <div class="text-gray-500">
-                        Spring 2023
-                    </div>
-                </div>
-
-                <div>
-                    Compilation of solutions to chapters 1-4 of Analysis of Boolean functions
-                </div>
-            </a>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="Advanced_Algorithms_Final_Project__Graph_Streaming_.pdf" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Dynamic Graph Sketching
-                    </div>
-
-                    <div class="text-gray-500">
-                        Spring 2023
-                    </div>
-                </div>
-
-                <div>
-                    COMS 4232 Advanced Algorithms final project surveying the AGM sketch and its optimality
-                </div>
-            </a>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="Survey on TFNP and its Applications 12-30-2022.pdf" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        TFNP and Applications
-                    </div>
-
-                    <div class="text-gray-500">
-                        Fall 2022
-                    </div>
-                </div>
-
-                <div>
-                    Survey on complexity class TFNP, average case complexity, and applications
-                </div>
-            </a>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="Lecture_Scribe__Algorithms_for_Massive_Data_.pdf" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Compressed Sensing 
-                    </div>
-
-                    <div class="text-gray-500">
-                        Fall 2023
-                    </div>
-                </div>
-
-                <div>
-                    A lecture I scribed for COMS 6998 Algorithms for Massive Data
-                </div>
-            </a>
-
-            <h2 class="my-3 text-xl font-light">
-                Programming
-            </h2>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="./index.html" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Solution Manual: Divisors and Sandpiles
-                    </div>
-
-                    <div class="text-gray-500">
-                        Summer 2023
-                    </div>
-                </div>
-
-                <div>
-                    Compilation of solutions to chapters 1-5 of Divisors and Sandpiles by Corry and Perkinson
-                </div>
-            </a> 
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="https://github.com/KrishSingal/RubiksMusic" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Rubiks Music
-                    </div>
-
-                    <div class="text-gray-500">
-                        Summer 2023
-                    </div>
-                </div>
-
-                <div>
-                    Auralized representation of a rubik's cube and implementation of Thistlewaite's solving algorithm
-                </div>
-            </a>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="https://chipfiringinterface.web.app/" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        Chip Firing Interface
-                    </div>
-
-                    <div class="text-gray-500">
-                        Summer 2023
-                    </div>
-                </div>
-
-                <div>
-                    Contributions include optimized computation of graph gonality and multiplicity free gonality
-                </div>
-            </a>
 
             <h2 class="my-3 text-xl font-light">
                 Publications
             </h2>
-
-            <a class="block rounded-lg m-2 p-3 hover:bg-gray-100" href="https://arxiv.org/abs/2208.14530" target="_blank" rel="noopener noreferrer">
-                <div class="flex justify-between">
-                    <div class="font-light">
-                        MC^2: Rigorous and Efficient Greybox Fuzzing
+            <ol>
+                <li>
+                    <div>
+                        <p>
+                            MC^2: Rigorous and Efficient Directed Greybox Fuzzing
+                        </p>
+                        <i>
+                            Peter Coffman, Suman Jana, Samanway Sadhu, Abhishek Shah, Dongdong She, <span class="font-light"> Krish Singal </span> 
+                        </i>
+                        <p>
+                             (Honorable Mention Best Paper) ACM CCS 2022. [<a href="https://arxiv.org/abs/2208.14530" target="_blank" rel="noopener noreferrer" style="color:#3b82f6">arXiv</a>]
+                        </p>
                     </div>
+                </li>
+            </ol>
+            <br>
+            <div class="text-sm">
+                *Authors are listed in alphabetical order
+            </div>
 
-                    <div class="text-gray-500">
-                        2021-2022
-                    </div>
-                </div>
+            <h2 class="my-3 text-xl font-light">
+                Theory
+            </h2>
+            <ol>
+                <li>
+                    Solution manual to chapters 1-4 of Analysis of Boolean Functions by Ryan O'Donnell <span> 
+                        [<a href="Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">pdf</a>]
+                    </span>
+                </li>
 
-                <div>
-                    Novel fuzzer published in ACM CCS
-                </div>
-            </a> 
+                <li>
+                    COMS 4232 Advanced Algorithms final project surveying the AGM sketch and its optimality [<a href="Advanced_Algorithms_Final_Project__Graph_Streaming_.pdf" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">pdf</a>]
+                </li>
 
-            <p class="my-5">
-                In the past, I have worked at Apple and Amazon Web Services as a software intern. In summer 2023, I researched graph theory as part of the <a href="https://math.williams.edu/small/" class="hover:text-blue-400"> SMALL REU </a> program at Williams College. I also enjoy playing and writing music occasionally. Some of my other interests include science fiction novels, table tennis, speed cubing (but without the speed), and movies. Check out my <a href="https://github.com/KrishSingal" class="hover:text-blue-400">github</a>! Feel free to reach out to me at <a href="mailto:krish.singal@columbia.edu" class="hover:text-blue-400">krish.singal@columbia.edu</a>! 
-            </p>
-        -->
+                <li>
+                    Survey of complexity class TFNP, average case complexity, and applications [<a href="Survey on TFNP and its Applications 12-30-2022.pdf" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">pdf</a>]
+                </li>
+
+                <li>
+                    COMS 6998 Algorithms for Massive Data scribed lectures on compressed sensing and distribution testing [<a href="Lecture_Scribe__Algorithms_for_Massive_Data_.pdf" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">pdf</a>][<a href="Lecture_Scribe_2__Algorithms_for_Massive_Data_.pdf" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">pdf</a>]
+                </li>
+            </ol> 
+
+            <h2 class="my-3 text-xl font-light">
+                Programming
+            </h2>
+            <ol>
+                <li>
+                    Rubik's Music: Auralized representation of a rubik's cube and implementation of Thistlewaite's solving algorithm [<a href="https://github.com/KrishSingal/RubiksMusic" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">github</a>]
+                </li>
+                <li>
+                    Chip Firing Interface: Contributed optimizations for fast gonality computation [<a href="https://chipfiringinterface.web.app/" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">website</a>][<a href="https://github.com/KrishSingal/fsm" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">github</a>]
+                </li>
+            </ol>
+
+            <h2 class="my-3 text-xl font-light">
+                Talks
+            </h2>
+            <ol class="pb-8">
+                <li>
+                    Young Mathematician's Conference (YMC) 2023: On the Size and Compelxity of Scrambles [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank" style="color:#3b82f6" rel="noopener noreferrer">video</a>]
+                </li>
+            </ol>
+        
         </main>
     </div>
 
