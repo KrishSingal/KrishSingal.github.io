@@ -336,7 +336,7 @@ legend {
 ol,
 ul,
 menu {
-  list-style: 1;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -539,24 +539,16 @@ video {
   display: table;
 }
 
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-3\/5 {
   width: 60%;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .justify-center {
@@ -569,11 +561,6 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-16 {
