@@ -550,8 +550,8 @@ video {
   width: 33.333333%;
 }
 
-.w-full {
-  width: 100%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .max-w-6xl {
@@ -593,6 +593,10 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-8 {
@@ -639,10 +643,4 @@ video {
 .hover\:text-orange-400:hover {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .md\:w-3\/4 {
-    width: 75%;
-  }
 }
