@@ -566,6 +566,10 @@ video {
   width: 33.333333%;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -627,10 +631,6 @@ video {
   text-align: justify;
 }
 
-.font-\[\'Oswald\'\] {
-  font-family: 'Oswald';
-}
-
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -656,6 +656,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .text-blue-400 {
