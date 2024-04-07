@@ -530,10 +530,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -607,8 +603,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-2 {
@@ -649,10 +645,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-\[13px\] {
-  font-size: 13px;
-}
-
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -669,10 +661,6 @@ video {
 
 .font-\[275\] {
   font-weight: 275;
-}
-
-.font-\[400\] {
-  font-weight: 400;
 }
 
 .font-\[Open_Sans\] {
