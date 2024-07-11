@@ -586,6 +586,10 @@ video {
   list-style-type: disc;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .justify-center {
   justify-content: center;
 }
