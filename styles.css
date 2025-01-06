@@ -683,6 +683,10 @@ video {
   font-weight: 275;
 }
 
+.font-\[Open_Sans\] {
+  font-weight: Open Sans;
+}
+
 .font-extralight {
   font-weight: 200;
 }
