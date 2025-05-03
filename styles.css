@@ -554,8 +554,16 @@ video {
   margin-left: 1rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-8 {
@@ -661,8 +669,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-\[15px\] {
-  font-size: 15px;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -679,8 +688,8 @@ video {
   font-weight: 275;
 }
 
-.font-\[Open_Sans\] {
-  font-weight: Open Sans;
+.font-\[400\] {
+  font-weight: 400;
 }
 
 .font-extralight {
@@ -695,10 +704,6 @@ video {
   font-weight: 400;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -707,11 +712,6 @@ video {
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#EE4B2B\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(238 75 43 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-400:hover {
