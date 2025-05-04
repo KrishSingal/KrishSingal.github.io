@@ -619,6 +619,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -641,6 +645,10 @@ video {
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-4 {
