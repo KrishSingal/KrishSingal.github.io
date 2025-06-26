@@ -594,6 +594,10 @@ video {
   width: 60%;
 }
 
+.w-\[200\] {
+  width: 200;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -618,6 +622,10 @@ video {
 
 .grid-cols-\[70\%_30\%\] {
   grid-template-columns: 70% 30%;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
