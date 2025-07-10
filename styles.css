@@ -691,10 +691,6 @@ video {
   padding-left: 2rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
 .pr-8 {
   padding-right: 2rem;
 }
@@ -812,6 +808,10 @@ video {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -830,5 +830,9 @@ video {
 
   .md\:gap-16 {
     gap: 4rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
   }
 }
