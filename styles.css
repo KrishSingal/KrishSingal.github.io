@@ -729,8 +729,16 @@ video {
   line-height: 2.25rem;
 }
 
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
+.text-\[0\.91rem\] {
+  font-size: 0.91rem;
+}
+
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
+.text-\[1\.35rem\] {
+  font-size: 1.35rem;
 }
 
 .text-sm {
@@ -743,8 +751,8 @@ video {
   line-height: 1.75rem;
 }
 
-.font-\[275\] {
-  font-weight: 275;
+.font-\[225\] {
+  font-weight: 225;
 }
 
 .font-\[400\] {
@@ -765,6 +773,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .text-blue-400 {
@@ -806,10 +818,6 @@ video {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {

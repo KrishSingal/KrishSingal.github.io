@@ -17,7 +17,12 @@ module.exports = {
         extrabold: '800',
         'extra-bold': '800',
         black: '900',
-    }
+    },
+    wordSpacing: { // custom key
+      tight: '-0.05em',
+      normal: '0em',
+      wide: '0.05em',
+    },
   },
   plugins: [],
 }
