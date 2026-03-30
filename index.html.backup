@@ -1,0 +1,526 @@
+<html lang="en">
+<head>
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="U5NdmrUDiddQ1weUGfDhVg_hPZarTNjFCE7xTYXYmlE" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D6WT2PL7X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2D6WT2PL7X');
+    </script> 
+
+    <!-- npm run build-css -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- LaTex stuff --> 
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        MathJax = {
+            tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+            svg: {fontCache: 'global'}
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <!-- font stuff -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .upenn-red{
+        --tw-text-opacity: 1;
+        color: rgb(153 0 0 / var(--tw-text-opacity));
+    }
+
+    /*.columbia-blue{
+        --tw-text-opacity: 1;
+        color: rgb(0 47 160 / var(--tw-text-opacity));
+        color: rgb(0 56 101 / var(--tw-text-opacity));
+    }
+
+    .upenn-blue{
+        --tw-text-opacity: 1;
+        color: rgb(1 31 91 / var(--tw-text-opacity));
+    }
+
+    .apple{
+        --tw-text-opacity: 1;
+        color: rgb(29 29 31 / var(--tw-text-opacity));
+    }
+
+    .amazon{
+        --tw-text-opacity: 1;
+        color: rgb(255 153 0 / var(--tw-text-opacity));
+    }
+
+    .small-reu{
+        --tw-text-opacity: 1;
+        color: rgb(81 38 152 / var(--tw-text-opacity));
+    }*/
+
+    .click:hover {
+        /*opacity: 50%;*/
+        text-decoration-line:underline;
+    }
+
+    .click-red:hover{
+        color: rgb(205 0 0 / var(--tw-text-opacity));
+    }
+
+    .blue{
+        color: rgb(0, 73, 137);
+    }
+
+    .gray{
+        --tw-text-opacity: 1;
+        color: rgb(125 125 125 / var(--tw-text-opacity));
+    }
+
+    .bold{
+        font-weight: 425
+    }
+</style>
+
+<!-- px - 96 py - 32 -->
+<body class="flex justify-center text-[0.92rem] font-[225] font-sans tracking-tight tight">
+    <!-- <div class="w-11/12 md:w-3/4 max-w-6xl py-16"> -->
+    <div class="w-4/5 md:w-3/5 max-w-6xl py-8">
+        <div>
+            <!--<header>
+                <div class="flex justify-between">
+                
+                    <div> 
+
+                    </div>
+
+                    <a class="col-start-4 font-normal text-2xl hover:blue" href="./index.html">
+                        Krish Singal 
+                    </a>
+                
+                    <a class="text-xl font-light blue click" href="CV.pdf" target="_blank" rel="noopener noreferrer"> CV </a>
+                </div>      
+
+                <a class="flex justify-center font-light">
+                    ksingal [at] seas.upenn.edu
+                </a>
+
+                
+                <nav class="flex">  
+                    <a href="projects.html" class="hover:blue text-xl font-extralight"> Projects </a>   
+                    <a href="cv.html" class="hover:blue text-xl font-extralight pl-8"> CV </a> 
+                    <a href="miscellaneous.html" class="hover:blue text-xl font-extralight pl-8"> Miscellaneous </a> 
+                    
+                    <a href="blog.html" class="hover:blue text-xl font-extralight"> Blog </a>
+                </nav>
+            </header>-->
+            
+        </div>
+        <main class="pt-4">
+            <!-- <span class="font-normal pb-4"> Email: </span> ksingal [at] seas.upenn.edu --> 
+            <!--<div class="columns-2">
+                <div class="columns-sm">
+                    <img class="w-1/4 sm:w-1/8 rounded-lg" src="Krish copy.jpg" height="auto">
+                </div>
+                <div>
+                    Hello! I am a first year PhD student in the <a class="blue click" href="https://theory.cis.upenn.edu/" target="_blank" rel="noopener noreferrer">University of Pennsylvania Theory Group</a>, where 
+                    I am incredibly fortunate to be advised by <a class="blue click" href="https://sites.google.com/site/erikwaing/home" target="_blank" rel="noopener noreferrer">Erik Waingarten</a> and 
+                    <a class="blue click" href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" rel="noopener noreferrer">Sanjeev Khanna</a>.  My research interests lie in algorithm design and complexity for problems 
+                    in high dimensional geometry, graph theory, and machine learning. Previously, I studied computer science and math at <a class="blue click" href="/">Columbia University</a>, where I was fortunate to be 
+                    mentored by <a class="blue click" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a> and  
+                    <a class="blue click" href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank" rel="noopener noreferrer">Xi Chen</a>.
+                </div> 
+            </div>-->
+
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-[70%_30%] md:gap-16">
+                <div class="">
+                    <header class="py-2">
+                        <div class="flex justify-center">
+
+                            <a class="col-start-4 font-[425] text-[1.3rem] hover:blue" href="./index.html">
+                                Krish Singal 
+                            </a>
+                        </div>      
+
+                        <!-- <a class="flex justify-center font-light">
+                            ksingal [at] seas.upenn.edu
+                        </a> -->
+
+                        
+                        <!-- <nav class="flex">  
+                            <a href="projects.html" class="hover:blue text-xl font-extralight"> Projects </a>   
+                            <a href="cv.html" class="hover:blue text-xl font-extralight pl-8"> CV </a> 
+                            <a href="miscellaneous.html" class="hover:blue text-xl font-extralight pl-8"> Miscellaneous </a> 
+                            
+                            <a href="blog.html" class="hover:blue text-xl font-extralight"> Blog </a>
+                        </nav>-->
+                    </header>
+                    <div class="md:hidden flex justify-center">
+                        <img class="w-[250]" src="Krish copy.jpg" height="auto">
+
+                        <!-- <div class="mb-2 place-self-center">
+                            <a class="font-light blue click" href="CV.pdf" target="_blank" rel="noopener noreferrer"> CV </a> / 
+                            <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"> Scholar </a> / 
+                            <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer"> DBLP </a> /
+                            <a class="blue click" href="https://github.com/KrishSingal" target="_blank" rel="noopener noreferrer"> Github </a>
+                        </div> -->
+                    </div>
+
+                    <div class="pt-2 pb-2">
+                    
+                        <p class="text-justify">
+                            Hello! I am a second-year PhD student in the <a class="blue click" href="https://theory.cis.upenn.edu/" target="_blank" rel="noopener noreferrer">UPenn Theory Group</a>, where 
+                            I am incredibly fortunate to be advised by <a class="blue  click" href="https://sites.google.com/site/erikwaing/home" target="_blank" rel="noopener noreferrer">Erik Waingarten</a> and 
+                            <a class="blue click" href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" rel="noopener noreferrer">Sanjeev Khanna</a>.  My research interests lie in algorithm design and complexity for problems 
+                            in high dimensional geometry, graph theory, and machine learning. Previously, I studied computer science and math at <a class="blue click" href="/">Columbia</a>, where I was fortunate to be 
+                            mentored by <a class="blue click" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a> and  
+                            <a class="blue click" href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank" rel="noopener noreferrer">Xi Chen</a>.
+                        </p> 
+
+                        <!-- <br> 
+
+                        <p class="text-justify">
+                            Previously, I graduated from <a class="blue click" href="/">Columbia University</a>, where I studied computer science and math. During my undergraduate years, 
+                            I was fortunate to be mentored by <a class="blue click" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a>, 
+                            <a class="blue click" href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank" rel="noopener noreferrer">Xi Chen</a>, 
+                            and <a class="blue click" href="https://sites.williams.edu/10rem/" target="_blank" rel="noopener noreferrer">Ralph Morrison</a>.   
+                        </p> -->
+
+                    </div>
+
+                    <div class="mt-1 mb-3 flex flex-col items-center md:flex-row md:justify-center md:space-x-10">
+                        <div class="mb-2 md:mb-0 flex justify-center">
+                            <span class="bold">Email:</span>&nbsp; ksingal [at] seas.upenn.edu
+                        </div> 
+                        <div class="mb-2 md:mb-0 flex justify-center">
+                            <div>
+                                <a class="blue click" href="Krish Singal CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> / 
+                                <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a> / 
+                                <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">DBLP</a> /
+                                <a class="blue click" href="https://github.com/KrishSingal" target="_blank" rel="noopener noreferrer">Github</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <span class="bold">Office:</span>&nbsp; AGH 400
+                        </div> 
+                    </div>
+
+
+
+                    <!--<div class="mt-1 mb-3 flex justify-center md:block">
+                        <div class="mb-2 md:pr-10 flex justify-center">
+                            <span class="bold">Email: </span> &nbsp ksingal [at] seas.upenn.edu
+                        </div> 
+                        <div class="md:pr-10 flex justify-center">
+                            <div class="mb-2">
+                                <a class="blue click" href="CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> / 
+                                <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a> / 
+                                <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">DBLP</a> /
+                                <a class="blue click" href="https://github.com/KrishSingal" target="_blank" rel="noopener noreferrer">Github</a>
+                            </div>
+                        </div>
+                        <div class="md:pr-10 flex justify-center">
+                            <span class="bold">Office:</span> &nbsp AGH 400
+                        </div> 
+                        
+
+                    </div>
+
+                    <div class="mt-1 mb-3 flex justify-center md:block">
+                        <div class="mb-2 md:pr-10 flex justify-center">
+                            <span class="bold">Email: </span> &nbsp ksingal [at] seas.upenn.edu
+                        </div> 
+                        <div class="md:pr-10 flex justify-center">
+                            <div class="mb-2">
+                                <a class="blue click" href="CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> / 
+                                <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a> / 
+                                <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">DBLP</a> /
+                                <a class="blue click" href="https://github.com/KrishSingal" target="_blank" rel="noopener noreferrer">Github</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <span class="bold">Office:</span> &nbsp AGH 400
+                        </div> 
+                        
+
+                    </div>-->
+
+                    <!--<div class="flex">
+
+                        <div class="pr-8">
+                            <h4>
+                                Hello! I am a senior at Columbia University. I am broadly interested in theoretical computer science. Most recently, I've enjoyed thinking about sublinear algorithms. 
+                            </h4>
+
+                            <br>
+
+                            <h4>
+                                In the past, I have worked at Apple and Amazon Web Services as a software intern. In summer 2023, I researched graph theory as part of the <a class="blue click" href="https://math.williams.edu/small/" target="_blank" rel="noopener noreferrer"> SMALL REU </a> program at Williams College. 
+                            </h4>
+                                
+                            <br>
+
+                            <h4>
+                                I enjoy playing and writing <a class="blue click" href="." target="_blank" rel="noopener noreferrer">music</a> occasionally. Some of my other interests include science fiction novels, table tennis, and speed cubing (but without the speed). 
+                            </h4>
+
+                            <br>
+
+                            <h4>
+                                Feel free to reach out to me at [firstname].[lastname]@columbia.edu. My <a class="blue click" href="Krish Singal CV.pdf" target="_blank" rel="noopener noreferrer">CV</a> is available here. Take a look at some of my work below!
+                            </h4>
+                        </div>
+
+                        <img class="w-1/3 sm:shrink-0 float-right flex rounded-lg" src="Krish copy.jpg" height="auto"> 
+                    </div> -->
+
+                    <h4 class="mt-7 text-[1.1rem] font-[425]">
+                        Research
+                    </h4>
+                    <p class="text-sm">
+                        Authors are listed in alphabetical order unless otherwise specified(*) 
+                    </p>
+                    <!-- <p class="mb-2">
+                        [<a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">google scholar</a>][<a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">dblp</a>]
+                    </p> 
+                    <p class="mt-1 pb-1">
+                        Here are links to my <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">DBLP</a> pages. 
+                    </p>-->
+
+                    <ul class="mt-3 mb-6"> 
+                                     
+                    
+                        <li class="font-[400]">
+                            <a class="blue click" href="https://arxiv.org/abs/2510.04918" target="_blank" rel="noopener noreferrer"> A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams </a> 
+                        </li>
+                        <p class="">
+                            <a class="click" href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" rel="noopener noreferrer">Sanjeev Khanna</a>, <a class="click" href="https://apadaki.github.io/" target="_blank" rel="noopener noreferrer">Ashwin Padaki</a>,
+                            <a class="click" href="." target="_blank" rel="noopener noreferrer">Krish Singal</a>,  
+                            <a class="click" href="https://sites.google.com/site/erikwaing/home" target="_blank" rel="noopener noreferrer">Erik Waingarten</a>
+                        </p>
+                        <p class=""> 
+                            <a class="upenn-red click" href="." target="_blank" rel="noopener noreferrer"> FOCS 2025 </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class = "blue click" href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank" rel="noopener noreferrer"> Slides </a> &nbsp;&nbsp;
+                            <a class = "blue click" href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank" rel="noopener noreferrer"> Video </a>
+                        </p> 
+
+                        
+                        
+                        
+                        <li class="font-[400] mt-2">
+                            <a class="blue click" href="https://arxiv.org/abs/2208.14530" target="_blank" rel="noopener noreferrer"> MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing* </a> 
+                        </li>
+                        <p class="">
+                            <a class="click" href="https://www.cs.columbia.edu/~ass/" target="_blank" rel="noopener noreferrer">Abhishek Shah</a>, <a class="click" href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" rel="noopener noreferrer">Dongdong She</a>, 
+                            <a class="click" href=".">Samanway Sadhu</a>, 
+                            <a class="click" href="." target="_blank" rel="noopener noreferrer">Krish Singal</a>, 
+                            <a class="click" href=".">Peter Coffman</a>, <a class="click" href="https://www.cs.columbia.edu/~suman/" target="_blank" rel="noopener noreferrer">Suman Jana</a>
+                        </p>
+                        <p class=""> 
+                            <a class="upenn-red click" href="https://dl.acm.org/doi/10.1145/3548606.3560648" target="_blank" rel="noopener noreferrer"> ACM CCS 2022 </a>
+                        </p> 
+
+
+
+                        <li class="font-[400] mt-2"> 
+                            <a class="blue click" href="https://arxiv.org/abs/2311.17342" target="_blank" rel="noopener noreferrer"> On the Size and Complexity of Scrambles </a>
+                        </li> 
+                        <p class=""> 
+                            <a class="click" href=".">Seamus Connor</a>, <a class="click" href=".">Steven DiSilvio</a>,
+                            <a class="click" href=".">Sasha Kononova</a>, <a class="click" href="https://sites.williams.edu/10rem/" target="_blank" rel="noopener noreferrer">Ralph Morrison</a>, <a class="click" href="." target="_blank" rel="noopener noreferrer">Krish Singal</a>
+                        </p>
+                        <p class=""> 
+                            <a class = "blue click" href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank" rel="noopener noreferrer"> Slides </a> &nbsp;&nbsp;
+                            <a class = "blue click" href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank" rel="noopener noreferrer"> Video </a> 
+                        </p> 
+
+                        
+                        <!-- <p class="pb-2"> 
+                            [<a class="blue click" href="https://arxiv.org/abs/2311.17342" target="_blank" rel="noopener noreferrer">arXiv</a>] In Submission 
+                        </p> -->
+
+
+
+                        <li class="font-[400] mt-2"> 
+                            <a class="blue click" href="https://arxiv.org/abs/2403.03907" target="_blank" rel="noopener noreferrer"> The Gonality of Chess Graphs </a>
+                        </li> 
+                        <p class=""> 
+                            <a class="click" href=".">Nila Cibu</a>, <a class="click" href=".">Kexin Ding</a>,
+                            <a class="click" href=".">Steven DiSilvio</a>, <a class="click" href=".">Sasha Kononova</a>, 
+                            <a class="click" href=".">Chan Lee</a>, <a class="click" href="https://sites.williams.edu/10rem/" target="_blank" rel="noopener noreferrer">Ralph Morrison</a>, <a class="click" href="." target="_blank" rel="noopener noreferrer">Krish Singal</a>
+                        </p>
+                        <!-- <p class="pb-2">
+                            [<a class="blue click" href="https://arxiv.org/abs/2311.17342" target="_blank" rel="noopener noreferrer">arXiv</a>] In Submission 
+                        </p> -->
+
+                        <li class="font-[400] mt-2"> 
+                            <a class="blue click" href="https://arxiv.org/abs/2510.03499" target="_blank" rel="noopener noreferrer"> Chip-Firing Games on Banana Trees </a>
+                        </li> 
+                        <p class=""> 
+                            <a class="click" href=".">Marchelle Beougher</a>, <a class="click" href=".">Nila Cibu</a>, <a class="click" href=".">Kexin Ding</a>, <a class="click" href=".">Steven DiSilvio</a>, <a class="click" href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" rel="noopener noreferrer">Kristin Heysse</a>, <a class="click" href=".">Sasha Kononova</a>, <a class="click" href=".">Chan Lee</a>, <a class="click" href="https://sites.williams.edu/10rem/" target="_blank" rel="noopener noreferrer">Ralph Morrison</a>, <a class="click" href="." target="_blank" rel="noopener noreferrer">Krish Singal</a>
+                        </p>
+
+                        
+
+                    </ul>
+                    
+
+                    <h2 class="mt-3 mb-1 pt-1 text-[1.1rem] font-[425]">
+                        Teaching
+                    </h2>
+                    <div class="mb-1">
+                        I have served as a teaching assistant for the following course offerings
+                    </div>
+                    <ul class="ml-4 mb-1 list-disc list-inside">
+                        <li> 
+                            CS 5030 Algorithms for Big Data (Fall 2025, UPenn)
+                        </li> 
+                        <li> 
+                            <!-- <a href="https://www.cs.columbia.edu/~andoni/advancedS24/index.html" class="blue click" target="_blank" rel="noopener noreferrer"> CS 4232 Advanced Algorithms </a> (Spring 2024) --> 
+                            CS 4232 Advanced Algorithms (Spring 2024, Columbia)
+                        </li> 
+                        <li> 
+                            <!-- <a href="https://www.henryyuen.net/classes/fall2023_complexity/" class="blue click" target="_blank" rel="noopener noreferrer"> CS 4236 Computational Complexity Theory </a>  (Fall 2023) -->
+                            CS 4236 Computational Complexity (Fall 2023, Columbia)
+                        </li> 
+                        <li> 
+                            CS 4231 Analysis of Algorithms (Spring 2023 + Fall 2022, Columbia)
+                            <!-- [<a href="Spring 2023 TA Evaluations.pdf" class="blue click" target="_blank" rel="noopener noreferrer">evaluations</a>] -->
+                        </li> 
+                    </ul> 
+                    <!-- <div>
+                        In 2023, I co-organized the <a class="blue click" href="https://arxiv.org/abs/2105.10386" target="_blank" rel="noopener noreferrer">analysis of boolean functions</a> group for the <a href="https://columbia-ugtcs.github.io/fall2023.html" class="blue click" target="_blank" rel="noopener noreferrer">columbia undergraduate TCS learning seminar</a> 
+                        and wrote a partial <a class="blue click" href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank" rel="noopener noreferrer">solution manual</a>.  
+                        Solution manual to <a class="blue click" href="https://arxiv.org/abs/2105.10386" target="_blank" rel="noopener noreferrer">Analysis of Boolean Functions</a> exercises
+                        <span> 
+                            [<a class="blue click" href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+                        </span>
+                    </div>
+
+                    <h2 class="mt-3 mb-1 text-xl font-light">
+                        Projects 
+                    </h2>
+                    <div>
+
+                    </div>
+                    <ul class="ml-4 list-disc list-inside">
+                        <li>
+                            Survey of subgraph counting algorithms in the streaming model <span> 
+                                [<a class="blue click" href="projects/Algorithms_for_Massive_Data_Final_Project (1).pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+                            </span>
+                        </li> 
+                        <li>
+                            Solution manual to <a class="blue click" href="https://arxiv.org/abs/2105.10386" target="_blank" rel="noopener noreferrer">Analysis of Boolean Functions</a> exercises
+                            <span> 
+                                [<a class="blue click" href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+                            </span>
+                        </li>
+
+                        <li>
+                            Survey of graph streaming algorithms covering the AGM sketch and its optimality [<a class="blue click"href="projects/Advanced_Algorithms_Final_Project__Graph_Streaming_.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] 
+                        </li> 
+
+                        <li>
+                            Survey of complexity class TFNP, average case complexity, and applications [<a class="blue click" href="projects/Survey on TFNP and its Applications 12-30-2022.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+                        </li> 
+
+                        <li>
+                            Scribed lectures for <a class="blue click" href="https://www.cs.columbia.edu/~andoni/algoF23/index.html" target="_blank" rel="noopener noreferrer">CS 6998: Algorithms for Massive Data</a> on compressed sensing and distribution testing [<a class="blue click" href="projects/Lecture_Scribe__Algorithms_for_Massive_Data_.pdf" target="_blank" rel="noopener noreferrer">pdf</a>][<a class="blue click" href="projects/Lecture_Scribe_2__Algorithms_for_Massive_Data_.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+                        </li> 
+                        
+                        <li>
+                            Rubik's Music: Auralized representation of a rubik's cube and implementation of Thistlethwaite's solving algorithm [<a class="blue click" href="https://github.com/KrishSingal/RubiksMusic" target="_blank" rel="noopener noreferrer">github</a>]
+                        </li> 
+                        <li> 
+                            Chip Firing Interface [<a class="blue click" href="https://chipfiringinterface.web.app/" target="_blank" rel="noopener noreferrer">website</a>][<a class="blue click" href="https://github.com/KrishSingal/fsm" target="_blank" rel="noopener noreferrer">github</a>]
+                        </li>
+                    </ul>
+
+
+                    <h2 class="mt-3 mb-1 text-xl font-light"> 
+                        Honors 
+                    </h2> 
+                    <ul class="ml-4 list-disc list-inside"> 
+                        <li> 
+                            <a class="blue click" href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target="_blank" rel="noopener noreferrer">NSF GRFP 2024 </a> Honorable Mention 
+                        </li>
+                    </ul> -->
+
+                    <h2 class="mt-5 mb-1 text-[1.1rem] font-[425]"> 
+                        Other
+                    </h2> 
+                    <div class="pb-12">
+                        <p class="text-justify"> 
+                            In the past, I've interned as a software engineer at <a class="blue click" href="/">AWS</a> and <a class="blue click" href="/">Apple</a> and did mathematics research as part of the <a class="blue click" href="https://math.williams.edu/small/" target="_blank" rel="noopener noreferrer">SMALL REU</a>. In my free time I enjoy long-distance running, hiking, creative writing, reading, photography, and playing music. 
+                        </p> 
+                    </div> 
+                    
+                    <!-- In my free time I enjoy <a class="blue click" href="https://www.athlinks.com/athletes/573733243" target="_blank" rel="noopener noreferrer">long-distance running</a>, hiking, <a class="blue click" href="https://storiesbythefire.substack.com/" target="_blank" rel="noopener noreferrer">creative writing</a>, <a class="blue click" href="https://www.goodreads.com/user/show/157037338-krish-singal" target="_blank" rel="noopener noreferrer">reading</a>, <a class="blue click" href="https://www.flickr.com/photos/203846206@N08/" target="_blank" rel="noopener noreferrer">photography</a>, and playing music. 
+                    
+                    
+                    
+                    <a class="blue click" href="https://substack.com/settings?utm_source=user-menu" target="_blank" rel="noopener noreferrer">writing</a>, <a class="blue click" href="https://www.goodreads.com/user/show/157037338-krish-singal" target="_blank" rel="noopener noreferrer">reading</a>
+
+                    <a class="blue click" href="https://www.goodreads.com/review/list/157037338?shelf=read" target="_blank" rel="noopener noreferrer">reading</a> <a class="blue click" href="https://www.athlinks.com/athletes/573733243" target="_blank" rel="noopener noreferrer">running</a>, <a class="blue click" href="https://www.strava.com/athletes/133490266" target="_blank" rel="noopener noreferrer">hiking</a>, <a class="blue click" href="https://storiesbythefire.substack.com/" target="_blank" rel="noopener noreferrer">creative writing</a>, <a class="blue click" href="https://www.flickr.com/photos/203846206@N08/" target="_blank" rel="noopener noreferrer">photography</a>, and playing music.
+                    
+                    <div class="pb-12"> 
+                        <p> 
+                            In my free time I enjoy <a class="blue click" href="." target="_blank" rel="noopener noreferrer">music</a> climbing trees, hiking, playing (table) tennis, writing fiction, playing music, and speed cubing. 
+                        </p>
+                    </div>
+
+
+                    <div class="pb-12">
+                        <p class="text-justify">
+                            In my free time I enjoy <a class="blue click" href="." target="_blank" rel="noopener noreferrer">music</a> climbing trees, hiking, playing (table) tennis, writing fiction, playing music, and speed cubing. 
+                        </p> 
+                    </div> 
+                    
+                    
+                    <h2 class="mt-3 mb-1 text-xl font-light">
+                        Talks 
+                    </h2>
+                    <ul class="ml-4 list-disc list-inside pb-8">
+                        <li>
+                            Joint Mathematics Meetings (JMM) 2024: On the Size and Complexity of Scrambles [<a class="blue click" href="https://meetings.ams.org/math/jmm2024/meetingapp.cgi/Paper/30163" target="_blank" rel="noopener noreferrer">abstract</a>]
+                        </li>
+                        <li>
+                            Joint Mathematics Meetings (JMM) 2024: Bananas, Eggs, and Chips: A Recipe for Graph Gonality [<a class="blue click" href="https://meetings.ams.org/math/jmm2024/meetingapp.cgi/Paper/33830" target="_blank" rel="noopener noreferrer">abstract</a>]
+                        </li>
+                        <li>
+                            Young Mathematician's Conference (YMC) 2023: On the Size and Complexity of Scrambles [<a class="blue click" href="https://ymc.osu.edu/sites/default/files/2023-08/ymc_2023-2.pdf" target="_blank" rel="noopener noreferrer">abstract</a>] [<a class="blue click" href="https://www.youtube.com/watch?v=BFh4ejYybhc" target="_blank" rel="noopener noreferrer">video</a>]
+                        </li>
+                        <li>
+                            SMALL REU 2023: On the Size and Complexity of Scrambles [<a class="blue click" href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank" rel="noopener noreferrer">video</a>]
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="py-16 hidden md:block">
+                    <img class="pb-2 w-[250] place-self-center" src="Krish copy.jpg" height="auto">
+
+                    <!-- <div class="place-self-center">
+                        <a class="font-light blue click" href="CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>  /
+                        <a class="blue click" href="https://scholar.google.com/citations?user=owzAoCoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>  /
+                        <a class="blue click" href="https://dblp.org/pid/327/9147.html" target="_blank" rel="noopener noreferrer">DBLP</a> /
+                        <a class="blue click" href="https://github.com/KrishSingal" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div> -->
+                </div>
+            </div>
+        
+        </main>
+    </div>
+
+</body>
+
+</html>
