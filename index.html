@@ -21,9 +21,9 @@
       body {
         background-color: #fff;
         padding:50px;
-        font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        color:#727272;
-        font-weight:400;
+        font: 14.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color:#212529;
+        font-weight:375;
       }
 
       h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,7 @@
       }
 
       h1, h2, h3 {
-        line-height:1.1;
+        line-height:1.2;
       }
 
       h1 {
@@ -45,7 +45,6 @@
       }
 
       h2 {
-        color:#393939;
         font-weight: 500;
         margin: 0 0 0px;
       }
@@ -57,17 +56,26 @@
       }
 
       a {
-        color:#267CB9;
+        color: #0056b3;
         text-decoration:none;
       }
 
       a:hover {
-        color:#069;
-        font-weight:700;
+        color: #0056b3;
+        text-decoration:underline;
+      }
+
+      a.paper-title {
+        color: #000000;
+        font-weight: 520;
       }
 
       .author-link {
-        color: #777 !important;
+        color: #000000 !important;
+      }
+
+      .author-link:hover {
+        color: #000000;
       }
 
       .author-link:hover {
@@ -211,11 +219,42 @@
         font-size:11px;
       }
 
-      hr {
-        border:0;
-        background:#e5e5e5;
-        height:1px;
-        margin:0 0 20px;
+      hr.section-divider {
+        position: relative;
+        border: 0;
+        background: transparent;
+        height: 1px;
+        margin: 1.5rem 0;
+        overflow: visible;
+      }
+
+      hr.section-divider::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 1px;
+        background: #c3c3c3;
+        z-index: 0;
+      }
+
+      hr.section-divider::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        white-space: nowrap;
+        background: #ffffff;
+        padding: 0 0.9rem;
+        color: #9d9c9c;
+        font-weight: 400;
+        font-size: 0.90rem;
+        line-height: 1;
+        z-index: 2;
       }
 
       footer {
@@ -339,13 +378,11 @@
             <a href="https://github.com/KrishSingal" target="_blank">Github</a>
         </p>
 
-        <p style=""><strong>Contact:</strong> ksingal [at] upenn.edu</p>
+        <p style=""><strong>Contact:</strong> <span style="">ksingal@seas.upenn.edu</span></p>
       </header>
 
       <section>
-        <p>I am currently a PhD student advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a> in the <a href="https://theory.cis.upenn.edu/" target="_blank">UPenn Theory of Computation Group</a>. My research interests lie in algorithm design and complexity for problems in high dimensional geometry and machine learning.</p>
-            
-        <p>I graduated <i>magna cum laude</i> from Columbia University in 2024 with a B.S. in Computer Science. In my free time, I enjoy <a href="https://www.athlinks.com/athletes/573733243" target="_blank">long-distance running</a>, <a href="https://www.goodreads.com/user/show/157037338-krish-singal" target="_blank">reading</a>, and playing music.</p>
+        <p>I am currently a PhD student in the <a href="https://theory.cis.upenn.edu/" target="_blank">UPenn Theory Group</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. I graduated magna cum laude from Columbia University in 2024 with a B.S. in Computer Science. In my free time, I enjoy <a href="https://www.athlinks.com/athletes/573733243" target="_blank">long-distance running</a>, <a href="https://www.goodreads.com/user/show/157037338-krish-singal" target="_blank">reading</a>, and playing music.</p>
 
         <h3> Recent News </h3>
 
@@ -355,43 +392,46 @@
 
 
 
-        <h2 style="margin-top: 40px;">Research</h2>
+        <h2 style="margin-top: 30px; margin-bottom: 10px;">Research</h2>
 
-        <p style="margin: 0 0 15px;"><small>Authors are listed in alphabetical order unless otherwise specified(*)</small></p>
+        <p> My research interests lie in efficient algorithm design for problems in machine learning and high-dimensional geometry.</p>
 
-        <h3>Computer Science Theory</h3>
+        <!-- <p style="margin: 0 0 15px;"><small>Authors are listed in alphabetical order unless otherwise specified(*)</small></p> -->
 
-        <p style="margin: 0 0 0;"><a href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
-        <p style="margin: 0 0 0; color: #777;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
-        <p style="margin: 0 0 15px;"><span style="color: #000000;">Foundations of Computer Science (FOCS) 2025</span> &nbsp;&nbsp; (<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>) &nbsp;&nbsp; (<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>)</p>
+        <hr class="section-divider" data-label="Computer Science Theory">
 
-        <h3>Combinatorics</h3>
+        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
+        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Foundations of Computer Science (FOCS) 2025</span> &nbsp;&nbsp; [<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>]</p>
+
+        <hr class="section-divider" data-label="Combinatorics">
         
-        <p style="margin: 0 0 0;"><a href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
-        <p style="margin: 0 0 0; color: #777;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"> <i>In submission</i> &nbsp;&nbsp; (<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>) &nbsp;&nbsp; (<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>)</p>
+        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
+        <p style="margin: 0 0 0; color: #000000;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
+      
 
-        <p style="margin: 0 0 0;"><a href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
-        <p style="margin: 0 0 0; color: #777;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"> <i>In submission</i></p>
+        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
+        <p style="margin: 0 0 0; color: #000000;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span></p>
 
-        <p style="margin: 0 0 0;"><a href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
-        <p style="margin: 0 0 0; color: #777;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"> <i>In submission</i></p>
+        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
+        <p style="margin: 0 0 0; color: #000000;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span></p>
 
-        <h3>Systems/Security</h3>
+        <hr class="section-divider" data-label="Systems/Security">
 
-        <p style="margin: 0 0 0;"><a href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing*</a></p>
-        <p style="margin: 0 0 0; color: #777;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
-        <p style="margin: 0 0 0;"><span style="color: #000000;">ACM Computer and Communication Security (CCS) 2022</span></p>
+        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing*</a></p>
+        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
+        <p style="margin: 0 0 0;"><span style="color: #c5254e;">ACM Computer and Communication Security (CCS) 2022</span></p>
         <p style="margin: 0 0 15px;"> <i>Honorable Mention for Best Paper Award</i></p>
 
-        <h2 style="margin-top: 30px; margin-bottom: 5px;">Teaching</h2>
+        <!-- <h2 style="margin-top: 30px; margin-bottom: 5px;">Teaching</h2>
         <p>I have served as a teaching assistant for the following course offerings</p>
         <p style="margin: 0 0 0;">CS 5030 Algorithms for Big Data (Fall 2025 + Spring 2026, UPenn)</p>
         <p style="margin: 0 0 0;">CS 4232 Advanced Algorithms (Spring 2024, Columbia)</p>
         <p style="margin: 0 0 0;">CS 4236 Computational Complexity (Fall 2023, Columbia)</p>
-        <p style="margin: 0 0 15px;">CS 4231 Analysis of Algorithms (Fall 2022 + Spring 2023, Columbia)</p>
+        <p style="margin: 0 0 15px;">CS 4231 Analysis of Algorithms (Fall 2022 + Spring 2023, Columbia)</p> --> 
 
         <!-- <h2>Other</h2>
 
