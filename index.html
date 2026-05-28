@@ -215,9 +215,51 @@
       }
 
       section {
-        width:550px;
+        width:620px;
         float:right;
         padding-bottom:50px;
+      }
+
+      .news-box {
+        height: 100px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        background: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .news-box ul {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      /* Sleek scrollbar styling */
+      .news-box::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .news-box::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .news-box::-webkit-scrollbar-thumb {
+        background: #d0d0d0;
+        border-radius: 4px;
+      }
+
+      .news-box::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+
+      /* Firefox scrollbar styling */
+      .news-box {
+        scrollbar-width: thin;
+        scrollbar-color: #d0d0d0 transparent;
       }
 
       small {
@@ -391,19 +433,28 @@
 
         <h3> Recent News </h3>
 
-        <ul>
-            <li>Fall 2025: Presented our paper 'A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams' at FOCS 2025 in Sydney, Australia!</li>
-        </ul>
+        <div class="news-box">
+          <ul>
+            <!--<li> August 2026: Started my internship as an applied scientist at AWS in Santa Clara!</li> -->
+            <li>December 2025: Presented our paper <i>A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</i> at FOCS 2025 in Sydney, Australia!</li>
+          </ul>
+        </div>
 
 
 
-        <h2 style="margin-top: 30px; margin-bottom: 10px;">Research</h2>
+        <h2 style="margin-top: 10px; margin-bottom: 10px;">Research</h2>
 
         <p> My research interests lie in efficient algorithm design for problems in machine learning and high-dimensional geometry.</p>
 
         <!-- <p style="margin: 0 0 15px;"><small>Authors are listed in alphabetical order unless otherwise specified(*)</small></p> -->
+        
 
         <hr class="section-divider" data-label="Computer Science Theory">
+
+        <p style="margin: 0 0 0;"><a class="paper-title" href="/" target="_blank">Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms</a></p>
+        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.seas.upenn.edu/~nathanlw/" target="_blank" class="author-link">Nathan White</a>, Krish Singal </p> 
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint</span></p>
+        
 
         <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
         <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
@@ -413,16 +464,16 @@
         
         <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
         <p style="margin: 0 0 0; color: #000000;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
       
 
         <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
         <p style="margin: 0 0 0; color: #000000;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span></p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint</span></p>
 
         <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
         <p style="margin: 0 0 0; color: #000000;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint.</span></p>
+        <p style="margin: 0 0 15px;"><span style="color:#c5254e;">Preprint</span></p>
 
         <hr class="section-divider" data-label="Systems/Security">
 
