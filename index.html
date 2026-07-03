@@ -40,13 +40,14 @@
       }
 
       h1 {
-        font-size:28px;
+        font-size:25px;
         font-weight: 500;
       }
 
       h2 {
         font-weight: 500;
         margin: 0 0 0px;
+        font-size:20px;
       }
 
       h3, h4, h5, h6 {
@@ -56,18 +57,18 @@
       }
 
       a {
-        color: #4682B4;
+        color: #0154ac;
         text-decoration:none;
       }
 
       a:hover {
-        color: #4682B4;
+        color: #0154ac;
         text-decoration:underline;
       }
 
       a.paper-title {
         /* color: #0028ac; */
-        font-weight: 500;
+        font-weight: 450;
       }
 
       .author-link {
@@ -82,7 +83,7 @@
         color: #777;
       }
 
-      a small {
+      /* a small {
         font-size:11px;
         color:#777;
         margin-top:-0.3em;
@@ -91,7 +92,7 @@
 
       a:hover small {
         color:#777;
-      }
+      } */
 
       .wrapper {
         width:1000px;
@@ -218,10 +219,99 @@
         font-weight:700;
       }
 
+      .sidebar-news-list {
+        width:100%;
+        max-width:320px;
+        margin:20px 0 0;
+        text-align:left;
+        font-size:13.5px;
+        align-self: flex-start;
+      }
+
+      .sidebar-news-list > strong {
+        display:block;
+        text-align:center;
+      }
+
+      .sidebar-news-list ul {
+        margin:10px 0 0;
+        padding: 0rem 1rem 0.5rem 3.5rem;
+        list-style: disc;
+        list-style-position: outside;
+        display:block;
+        height:auto;
+        width:auto;
+        background:transparent;
+        border:none;
+        border-radius:0;
+      }
+
+      .sidebar-news-list li {
+        margin-bottom:6px;
+        float:none;
+        width:auto;
+        border:none;
+        height:auto;
+        display:list-item;
+      }
+
+      .sidebar-news-list a {
+        display:inline;
+        line-height:inherit;
+        font-size:inherit;
+        color: #0154ac;
+        text-decoration:none;
+        text-align:left;
+        padding:0;
+        height:auto;
+      }
+
+      .sidebar-news-list a:hover {
+        color: #0154ac;
+        text-decoration:underline;
+      }
+
       section {
         width:620px;
         float:right;
         padding-bottom:50px;
+      }
+
+      .research-paper {
+        margin-bottom: 1rem;
+      }
+
+      .research-paper.is-hidden {
+        display: none;
+      }
+
+      .research-toggle {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000000;
+        margin-left: 0.4rem;
+        text-decoration: none;
+      }
+
+      .research-toggle .research-label {
+        color: #0154ac;
+      }
+
+      .research-toggle:hover {
+        color: #0154ac;
+        text-decoration: underline;
+      }
+
+      .research-toggle:hover .research-label {
+        color: #0154ac;
+      }
+
+      .research-toggle.active {
+        text-decoration: none;
+      }
+
+      .research-toggle.active .research-label {
+        font-weight: 700;
       }
 
       .news-box {
@@ -401,7 +491,7 @@
   <body>
     <div class="wrapper">
       <header style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h1>Krish Singal</h1>
+        <h1 style="color:#0154ac">Krish Singal</h1>
         <img src="Krish copy.jpg" alt="Profile picture" style="text-align:center; width:75%; margin-bottom:15px;">
         <!-- <p>PhD Student at UPenn</p>
 
@@ -420,7 +510,17 @@
             <a href="https://github.com/KrishSingal" target="_blank">Github</a>
         </p>
 
-        <p style=""><strong>Contact:</strong> <span style="">ksingal@seas.upenn.edu</span></p>
+        <p><strong>Contact:</strong> <span>ksingal@seas.upenn.edu</span></p>
+
+        
+        
+        <div class="sidebar-news-list">
+          <strong>Recent News</strong>
+          <ul>
+            <li><strong>August 2026</strong>: Starting as an applied scientist intern at AWS, hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a>!</li>
+            <li><strong>December 2025</strong>: Presented our <a href="#">paper</a> at FOCS 2025 in Sydney, Australia!</li>
+          </ul>
+        </div>
       </header>
 
       <section>
@@ -429,22 +529,12 @@
 
         <!-- Recently, I have been thinking about devising efficient algorithms for (1) useful notions of vector quantization, (2) approximating the attention mechanism, (3) clustering high-dimensional data, and (4) constructing metric spanners. -->
 
-        <h3 class="news-heading"> Recent News </h3>
-
-        <div class="news-box">
-          <ul>
-            <li> Excited to start as an applied scientist intern at AWS, hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a>, in August 2026!</li>
-            <li>December 2025: Presented our paper <i>A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</i> at FOCS 2025 in Sydney, Australia!</li>
-          </ul>
-        </div>
-
-
         <!-- <h2 style="margin-top: 10px; margin-bottom: 10px;">Experience</h2>  
         <ul>
           <li>Amazon Web Services (Fall 2026), applied scientist hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a></li>
         </ul> -->
 
-        <h2 style="margin-top: 10px; margin-bottom: 10px;">Research</h2>
+        <h2 style="margin-top: 10px; margin-bottom: 10px;">Research <a href="javascript:void(0)" id="research-selected-toggle" class="research-toggle active" data-view="selected">[<span class="research-label">Selected</span>]</a> <a href="javascript:void(0)" id="research-all-toggle" class="research-toggle" data-view="all">[<span class="research-label">All</span>]</a></h2>
 
         
 
@@ -453,35 +543,45 @@
 
         <!-- <hr class="section-divider" data-label="Computer Science Theory"> -->
 
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2606.00289" target="_blank">Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms</a></p>
-        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.seas.upenn.edu/~nathanlw/" target="_blank" class="author-link">Nathan White</a>, Krish Singal </p> 
-        <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
-        
+        <div class="research-paper" data-selected="true">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2606.00289" target="_blank">Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms</a></p>
+          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.seas.upenn.edu/~nathanlw/" target="_blank" class="author-link">Nathan White</a>, Krish Singal </p> 
+          <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
+        </div>
 
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
-        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
-        <p style="margin: 0 0 15px;"><a href="https://ieeexplore.ieee.org/document/11369178", target="_blank", style="color:#000000">FOCS 2025</a> &nbsp;&nbsp; [<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>]</p>
+        <div class="research-paper" data-selected="true">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
+          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
+          <p style="margin: 0 0 15px;"><a href="https://ieeexplore.ieee.org/document/11369178", target="_blank", style="color:#000000">FOCS 2025</a> &nbsp;&nbsp; [<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>]</p>
+        </div>
 
         <!-- <hr class="section-divider" data-label="Combinatorics"> -->
         
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
-        <p style="margin: 0 0 0; color: #000000;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
+        <div class="research-paper" data-selected="false">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
+          <p style="margin: 0 0 0; color: #000000;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+          <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
+        </div>
       
+        <div class="research-paper" data-selected="false">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
+          <p style="margin: 0 0 0; color: #000000;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+          <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
+        </div>
 
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
-        <p style="margin: 0 0 0; color: #000000;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
-
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
-        <p style="margin: 0 0 0; color: #000000;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
-        <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
+        <div class="research-paper" data-selected="false">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
+          <p style="margin: 0 0 0; color: #000000;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
+          <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
+        </div>
 
         <!-- <hr class="section-divider" data-label="Systems/Security"> -->
 
-        <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing</a></p>
-        <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
-        <p style="margin: 0 0 0;"><a href="https://dl.acm.org/doi/10.1145/3548606.3560648", target="_blank", style="color: #000000;">ACM CCS 2022</a> &nbsp <i>Honorable Mention for Best Paper Award</i> </p>
+        <div class="research-paper" data-selected="false">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing</a></p>
+          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
+          <p style="margin: 0 0 0;"><a href="https://dl.acm.org/doi/10.1145/3548606.3560648", target="_blank", style="color: #000000;">ACM CCS 2022</a> &nbsp <i>Honorable Mention for Best Paper Award</i> </p>
+        </div>
 
         <!-- <h2 style="margin-top: 30px; margin-bottom: 5px;">Teaching</h2>
         <p>I have served as a teaching assistant for the following course offerings</p>
@@ -535,5 +635,35 @@
     </div>
 
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var selectedToggle = document.getElementById('research-selected-toggle');
+        var allToggle = document.getElementById('research-all-toggle');
+        var papers = Array.prototype.slice.call(document.querySelectorAll('.research-paper'));
+
+        function setView(view) {
+          papers.forEach(function (paper) {
+            var shouldShow = view === 'all' || paper.getAttribute('data-selected') === 'true';
+            paper.classList.toggle('is-hidden', !shouldShow);
+          });
+
+          [selectedToggle, allToggle].forEach(function (toggle) {
+            toggle.classList.toggle('active', toggle.getAttribute('data-view') === view);
+          });
+        }
+
+        selectedToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          setView('selected');
+        });
+
+        allToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          setView('all');
+        });
+
+        setView('selected');
+      });
+    </script>
   </body>
 </html>
