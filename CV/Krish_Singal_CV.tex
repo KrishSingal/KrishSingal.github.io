@@ -1,0 +1,182 @@
+\documentclass[10pt]{article}
+
+% ---- Page geometry (matched from template) ----
+\usepackage[letterpaper,
+            left=83.3pt, right=83.3pt,
+            top=67pt,    bottom=67pt]{geometry}
+
+% ---- Encoding ----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---- Colors & hyperlinks ----
+\usepackage[dvipsnames]{xcolor}
+\definecolor{customlinkcolor}{HTML}{000099}
+\usepackage[colorlinks=true,
+            urlcolor=customlinkcolor,
+            linkcolor=customlinkcolor,
+            citecolor=customlinkcolor]{hyperref}
+
+% ---- Table ----
+\usepackage{longtable}
+
+% ---- Lists ----
+\usepackage{enumitem}
+\setlist[itemize]{
+  itemsep=1.5pt,
+  parsep=0pt,
+  topsep=2pt,
+  partopsep=0pt,
+  leftmargin=2em,
+  labelsep=0.5em,
+  label=\scriptsize\textbullet
+}
+
+% ---- Misc ----
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---- Column widths ----
+\newlength{\lcol}\setlength{\lcol}{100pt}
+\newlength{\rcol}\setlength{\rcol}{\dimexpr\textwidth-\lcol\relax}
+
+% ---- Convenience: custom-colored bold (for pub titles & institutions) ----
+\newcommand{\bluebf}[1]{{\color{customlinkcolor}\textbf{#1}}}
+\newcommand{\sectionhead}[1]{\textsc{#1}}
+
+\begin{document}
+
+%=============================================================================
+% NAME + RULE
+%=============================================================================
+\noindent{\large\bfseries Krish Singal}
+
+\vspace{2pt}\noindent\rule{\textwidth}{0.4pt}\vspace{2pt}
+
+%=============================================================================
+% MAIN TABLE
+%=============================================================================
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\begin{longtable}{@{}p{\lcol}@{}p{\rcol}@{}}
+
+%---- Contact Information -----------------------------------------------------
+\sectionhead{Contact} &
+\texttt{Personal website:} \href{https://krishsingal.github.io}{https://krishsingal.github.io} \\
+& \texttt{LinkedIn:} \href{https://linkedin.com/in/krishsingal}{https://linkedin.com/in/krishsingal}\\
+& \texttt{Email Address:} \href{mailto:ksingal@engineering.upenn.edu}{ksingal@engineering.upenn.edu}
+\\[10pt]
+
+%---- Research Interests ------------------------------------------------------
+\sectionhead{Research \newline Interests} &
+I am broadly interested in theoretical computer science and machine learning. Recently, I have been thinking about problems related to efficient computation in machine learning systems.
+\\[10pt]
+
+%---- Education ---------------------------------------------------------------
+\sectionhead{Education} &
+\bluebf{\href{https://theory.cis.upenn.edu/}{University of Pennsylvania}} \hfill 2024--2029 (Expected)
+\begin{itemize}
+  \item PhD Candidate in Computer Science
+  \item Advised by \href{https://sites.google.com/site/erikwaing/home}{Erik Waingarten} and \href{https://sanjeevkhanna.org/}{Sanjeev Khanna}
+\end{itemize}\\
+& \bluebf{\href{https://www.columbia.edu/}{Columbia University}} \hfill 2020--2024
+\begin{itemize}
+  \item Bachelor of Science in Computer Science, Magna Cum Laude
+\end{itemize}
+\\[10pt]
+
+%---- Research Internships & Visits -------------------------------------------
+\sectionhead{Industry \newline Experience} &
+\textbf{Applied Scientist Intern, Amazon Web Services} \hfill Aug 2026 -- Present \\ 
+&
+\textbf{Software Engineering Intern, Apple} \hfill May 2022 -- Aug 2022\\ \\
+&
+\textbf{Software Engineering Intern, Amazon Web Services} \hfill May -- Aug 2021
+\\[10pt]
+
+%---- Publications ------------------------------------------------------------
+\sectionhead{Selected \newline Publications} &
+\bluebf{\href{https://arxiv.org/abs/2606.00289}{Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms}} \\
+& Krish Singal, Nathan White.\\
+& Preprint. \\[6pt]
+& \bluebf{\href{https://arxiv.org/abs/2510.04918}{A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams}}\\
+& Sanjeev Khanna, Ashwin Padaki, Krish Singal, Erik Waingarten.\\
+& Foundations of Computer Science (FOCS) 2025\\[6pt]
+& \bluebf{\href{https://arxiv.org/abs/2208.14530}{MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing}}\\
+& Abhishek Shah, Dongdong She, Samanway Sadhu, Krish Singal,
+  Peter Coffman, Suman Jana.\\
+& ACM Conference on Computer and Communications Security (CCS) 2022. \\
+&\textit{Honorable Mention Best Paper Award} \\
+\\[10pt]
+% & \bluebf{On the Size and Complexity of Scrambles}\\
+% & Seamus Connor, Steven DiSilvio, Sasha Kononova, Ralph Morrison, Krish Singal.\\
+% & In Submission.\\[6pt]
+% & \bluebf{The Gonality of Chess Graphs}\\
+% & Nila Cibu, Kexin Ding, Seamus Connor, Steven DiSilvio, Sasha Kononova,
+%   Chan Lee, Ralph Morrison, Krish Singal.\\
+% & In Submission.\\[6pt]
+% & \bluebf{Chip-Firing Games on Banana Trees}\\
+% & Marchelle Beougher, Nila Cibu, Kexin Ding, Seamus Connor, Steven DiSilvio,
+%   Kristin Heysse, Sasha Kononova, Chan Lee, Ralph Morrison, Krish Singal.\\
+% & In Submission.\\[6pt]
+
+
+%---- Talks -------------------------------------------------------------------
+\sectionhead{Talks} &
+\textcolor{customlinkcolor}{A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams}
+\begin{itemize}
+  \item Foundations of Computer Science (FOCS), December 2025
+  \item UPenn Theory Seminar, December 2025
+\end{itemize}\\ \\
+& \textcolor{customlinkcolor}{On the Size and Complexity of Scrambles}
+\begin{itemize}
+  \item Joint Mathematics Meetings (JMM), January 2024
+\end{itemize}
+\\[10pt]
+
+%---- Teaching ----------------------------------------------------------------
+\sectionhead{Teaching \newline and \newline service} &
+I have served as a teaching assistant for the following course offerings \\
+& \begin{itemize}
+  \item Algorithms for Big Data, taught by \href{https://www.engineering.upenn.edu/~anindyad/}{Anindya De} and \href{https://sites.google.com/site/erikwaing/home}{Erik Waingarten} (Summer 2026, Spring 2026, Fall 2025)
+  \item Advanced Algorithms, taught by \href{https://www.cs.columbia.edu/~andoni/}{Alexandr Andoni} (Spring 2024)
+  \item Computational Complexity, taught by \href{https://www.henryyuen.net/}{Henry Yuen} (Fall 2023)
+  \item Analysis of Algorithms, taught by \href{https://www.engineering.columbia.edu/faculty-staff/directory/christos-papadimitriou}{Christos Papadimtriou} (Spring 2023, Fall 2022)
+\end{itemize} \\ \\
+& In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the \href{https://columbia-ugtcs.github.io/fall2023.html}{Columbia Undergraduate Learning Seminar in Theoretical Computer Science}. \\ \\
+&I have served as a sub-reviewer for: STACS 2026
+\\[10pt]
+
+%---- Service -----------------------------------------------------------------
+% \sectionhead{Service} &
+% Subreviewer for STACS 2026.\\
+% & Mentor, Columbia Undergraduate Learning Seminar in TCS, 2023.
+% \\[10pt]
+
+\sectionhead{Coursework} 
+& Randomized Algorithms, Convex Optimization, Machine Learning Theory, Algorithms for Massive Data, Zero-Knowledge Proofs, Complexity Theory, Operating Systems, Distributed Systems, Quantum Computing.
+\\ \\
+
+
+%---- Honors & Awards ---------------------------------------------------------
+% \sectionhead{Honors \newline and \newline Awards} &
+% \begin{itemize}
+%   \item Jonathan M.\ Smith Fellowship Awardee, 2025, University of Pennsylvania
+%   \item NSF Graduate Research Fellowship Program Honorable Mention, 2024
+%   \item Tau Beta Pi Inductee, 2024
+% \end{itemize}
+% \\
+
+\sectionhead{Skills} 
+& \textit{Programming Languages}: C/C++, Python, Java, LaTeX, GoLang, Rust \\
+&\textit{Languages}: English (native, fluent), Hindi (full professional fluency), Spanish (full professional fluency)
+\\
+
+\end{longtable}
+
+\end{document}
