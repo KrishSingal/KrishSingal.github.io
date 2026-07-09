@@ -222,10 +222,11 @@
       .sidebar-news-list {
         width:100%;
         max-width:320px;
-        margin:20px 0 0;
-        text-align:left;
+        margin:0 auto 0;
+        text-align:center;
         font-size:13.5px;
-        align-self: flex-start;
+        align-self: center;
+        padding-left: 1.5rem;
       }
 
       .sidebar-news-list > strong {
@@ -234,16 +235,18 @@
       }
 
       .sidebar-news-list ul {
-        margin:10px 0 0;
-        padding: 0rem 1rem 0.5rem 3.5rem;
-        list-style: disc;
+        margin:10px auto 0;
+        padding:0;
+        list-style:none;
         list-style-position: outside;
         display:block;
         height:auto;
-        width:auto;
+        width:fit-content;
+        max-width:100%;
         background:transparent;
         border:none;
         border-radius:0;
+        text-align:left;
       }
 
       .sidebar-news-list li {
@@ -252,7 +255,8 @@
         width:auto;
         border:none;
         height:auto;
-        display:list-item;
+        display:block;
+        text-align:left;
       }
 
       .sidebar-news-list a {
@@ -513,9 +517,9 @@
         <p><strong>Contact:</strong> <span>ksingal@seas.upenn.edu</span></p>
 
         
-        
+        <strong style="margin-top:25px">Recent News</strong>
         <div class="sidebar-news-list">
-          <strong>Recent News</strong>
+          
           <ul>
             <li><strong>August 2026</strong>: Starting as an applied scientist intern at AWS in Santa Clara, hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a>!</li>
             <li><strong>December 2025</strong>: Presented our <a href="https://arxiv.org/abs/2606.00289" target="_blank">paper</a> at FOCS 2025 in Sydney, Australia!</li>
@@ -524,8 +528,12 @@
       </header>
 
       <section>
-        <p>I am currently a PhD student at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>. Broadly, my research interests lie at the intersection of algorithm design and machine learning.  
+        <p>I am currently a PhD student at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>.   
         </p>
+
+        <p>Broadly, my research interests lie at the intersection of algorithm design and machine learning. Recently, I have been thinking about (1) efficient computation for machine learning systems and (2) streaming algorithms for problems in high-dimensional geometry. </p>
+
+        <p>I am currently a co-organizer of the <a href="https://theory.cis.upenn.edu/seminar/", target="_blank">Penn Theory Seminar</a>. Please reach out if you're interested in giving a talk!</p>
 
         <!-- Recently, I have been thinking about devising efficient algorithms for (1) useful notions of vector quantization, (2) approximating the attention mechanism, (3) clustering high-dimensional data, and (4) constructing metric spanners. -->
 
@@ -627,7 +635,7 @@
 
         <h2 style="margin-top: 25px; margin-bottom: 10px;">Service</h2>
         
-        <p>I am currently a co-organizer of the <a href="https://theory.cis.upenn.edu/seminar/", target="_blank">Penn Theory Seminar</a>. Please reach out if you're interested in giving a talk! In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. </p>
+        <p>In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. </p>
 
         <p>I have served as a reviewer for: STACS 2026</p>
 
