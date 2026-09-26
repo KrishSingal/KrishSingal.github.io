@@ -302,8 +302,28 @@
         font-size: 14px;
         font-weight: 500;
         color: #000000;
-        margin-left: 0.4rem;
         text-decoration: none;
+      }
+
+      .research-filters {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.3em;
+        margin-left: 0.25em;
+        vertical-align: baseline;
+      }
+
+      .research-bracket {
+        color: #222;
+        font-size: 0.9em;
+        font-weight: 400;
+        line-height: 0;
+      }
+
+      .research-separator {
+        color: #222;
+        font-size: 0.85em;
+        line-height: 1;
       }
 
       .research-toggle .research-label {
@@ -537,10 +557,10 @@
       </header>
 
       <section>
-        <p>I am currently a PhD student at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>.   
+        <p>I am currently a PhD student in CS Theory Group at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>.   
         </p>
 
-        <p>Broadly, my research interests lie at the intersection of algorithm design and machine learning. Recently, I have been thinking about (1) efficient computation for machine learning systems and (2) sublinear algorithms for problems in high-dimensional geometry. </p>
+        <p>Broadly, my research interests lie at the intersection of algorithm design and machine learning. Recently, I have been thinking about (1) efficient computation for machine learning systems (2) theoretical and practical aspects of information retrieval (3) sublinear algorithms for problems in high-dimensional geometry. </p>
 
         <p>I am currently a co-organizer of the <a href="https://theory.cis.upenn.edu/seminar/", target="_blank">Penn Theory Seminar</a>. Please reach out if you're interested in giving a talk!</p>
 
@@ -551,7 +571,11 @@
           <li>Amazon Web Services (Fall 2026), applied scientist hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a></li>
         </ul> -->
 
-        <h3 style="margin-top: 10px; margin-bottom: 10px;">Research <a href="javascript:void(0)" id="research-selected-toggle" class="research-toggle active" data-view="selected">[<span class="research-label">Selected</span>]</a> <a href="javascript:void(0)" id="research-all-toggle" class="research-toggle" data-view="all">[<span class="research-label">All</span>]</a></h3>
+        <h3 style="margin-top: 10px; margin-bottom: 10px;">Research <span class="research-filters"><span class="research-bracket">[</span><a href="#" class="research-toggle active" data-category="all" aria-pressed="true"><span class="research-label">All</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="ml" aria-pressed="false"><span class="research-label">ML</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="tcs" aria-pressed="false"><span class="research-label">TCS</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="combinatorics" aria-pressed="false"><span class="research-label">Combinatorics</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="systems" aria-pressed="false"><span class="research-label">Systems</span></a><span class="research-bracket">]</span></span></h3>
+
+        <p style="font-size: 0.85em; font-weight: 300; margin: -5px 0 4px;">Authors are ordered alphabetically unless otherwise noted ($\star$)</p>
+
+        <p style="font-size: 0.85em; font-weight: 300; margin: -5px 0 10px;">Equal contribution is denoted by ($\ast$)</p>
 
         
 
@@ -566,31 +590,31 @@
           <p style="margin: 0 0 15px;"><span style="color:#000000;">Preprint</span></p>
         </div> -->
 
-        <!-- <div class="research-paper" data-selected="true">
-          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">Attention via Nearest Neighbor Search Oracles</a></p>
-          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~andoni/" target="_blank" class="author-link">Alexandr Andoni</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="" target="_blank" class="author-link">Styopa Zharkov</a></p>
+        <div class="research-paper" data-categories="all ml">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="" target="_blank">Attention via Black-Box Vector Search</a></p>
+          <p style="margin: 0 0 0; color: #000000;"><a href="https://theory.cs.columbia.edu/" target="_blank" class="author-link">Styopa Zharkov$^{\ast}$</a>, Krish Singal$^{\ast}$, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki$^{\ast}$</a>, <a href="https://www.cs.columbia.edu/~andoni/" target="_blank" class="author-link">Alexandr Andoni$^{\ast}$</a></p>
           <p style="margin: 0 0 15px;"><span class="paper-conference">Preprint</span></p>
-        </div> -->
+        </div>
 
-        <div class="research-paper" data-selected="true">
+        <div class="research-paper" data-categories="all tcs">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2609.26934" target="_blank">Fast Geometric Spanners via Approximate Nearest Neighbor Search</a></p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~andoni/" target="_blank" class="author-link">Alexandr Andoni</a>, <a href="" target="_blank" class="author-link">Manuel Paez</a>, Krish Singal, <a href="https://www.engineering.upenn.edu/~tianzh/" target="_blank" class="author-link">Tian Zhang</a> </p> 
           <p style="margin: 0 0 15px;"><span class="paper-conference">Preprint</span></p>
         </div>
 
-        <div class="research-paper" data-selected="true">
+        <div class="research-paper" data-categories="all tcs">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2609.19089" target="_blank">A Near-Optimal Space Lower Bound for Euclidean Diameter Estimation in Dynamic Streams</a></p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
           <p style="margin: 0 0 15px;"><span class="paper-conference">Preprint</span></p>
         </div>
 
-        <div class="research-paper" data-selected="true">
+        <div class="research-paper" data-categories="all ml">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2606.00289" target="_blank">Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms</a></p>
-          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.seas.upenn.edu/~nathanlw/" target="_blank" class="author-link">Nathan White</a>, Krish Singal </p> 
+          <p style="margin: 0 0 0; color: #000000;"><a href="https://www.seas.upenn.edu/~nathanlw/" target="_blank" class="author-link">Nathan White$^{\ast}$</a>, Krish Singal$^{\ast}$</p> 
           <p style="margin: 0 0 15px;"><span class="paper-conference">NeurIPS 2026</span></p>
         </div>
 
-        <div class="research-paper" data-selected="true">
+        <div class="research-paper" data-categories="all tcs">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
           <p style="margin: 0 0 15px;"><a href="https://ieeexplore.ieee.org/document/11369178", class="paper-conference", target="_blank">FOCS 2025</a> &nbsp;&nbsp; [<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>]</p>
@@ -598,27 +622,27 @@
 
         <!-- <hr class="section-divider" data-label="Systems/Security"> -->
 
-        <div class="research-paper" data-selected="false">
-          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing</a></p>
+        <div class="research-paper" data-categories="all systems">
+          <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing</a>$^{\star}$</p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
           <p style="margin: 0 0 0;"><a href="https://dl.acm.org/doi/10.1145/3548606.3560648", class="paper-conference", target="_blank", style="color: #000000;">ACM CCS 2022</a> &nbsp <i>Honorable Mention for Best Paper Award</i> </p>
         </div>
         
         <!-- <hr class="section-divider" data-label="Combinatorics"> -->
 
-        <div class="research-paper" data-selected="false">
+        <div class="research-paper" data-categories="all combinatorics">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2311.17342" target="_blank">On the Size and Complexity of Scrambles</a></p>
           <p style="margin: 0 0 0; color: #000000;">Seamus Connor, Steven DiSilvio, Sasha Kononova, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
           <p style="margin: 0 0 15px;"><span class="paper-conference", style="color:#000000;">Preprint</span> &nbsp;&nbsp; [<a href="content/On_the_Size_and_Complexity_of_Scrambles__Presentation_.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vDHn8ZK2VCE" target="_blank">Video</a>]</p>
         </div>
       
-        <div class="research-paper" data-selected="false">
+        <div class="research-paper" data-categories="all combinatorics">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2403.03907" target="_blank">The Gonality of Chess Graphs</a></p>
           <p style="margin: 0 0 0; color: #000000;">Nila Cibu, Kexin Ding, Steven DiSilvio, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
           <p style="margin: 0 0 15px;"><span class="paper-conference", style="color:#000000;">Preprint</span></p>
         </div>
 
-        <div class="research-paper" data-selected="false">
+        <div class="research-paper" data-categories="all combinatorics">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.03499" target="_blank">Chip-Firing Games on Banana Trees</a></p>
           <p style="margin: 0 0 0; color: #000000;">Marchelle Beougher, Nila Cibu, Kexin Ding, Steven DiSilvio, <a href="https://www.macalester.edu/mscs/facultystaff/heysse/" target="_blank" class="author-link">Kristin Heysse</a>, Sasha Kononova, Chan Lee, <a href="https://sites.williams.edu/10rem/" target="_blank" class="author-link">Ralph Morrison</a>, Krish Singal</p>
           <p style="margin: 0 0 15px;"><span class="paper-conference", style="color:#000000;">Preprint</span></p>
@@ -660,7 +684,7 @@
           <li>Analysis of Algorithms taught by <a href="https://www.engineering.columbia.edu/faculty-staff/directory/christos-papadimitriou" target="_blank">Christos Papadimitriou</a> (Spring 2023, Fall 2022), Columbia University</li>
         </ul>
 
-        <p>In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. I also helped write a <a>partial solution manual</a> for exercises in Ryan O'Donnell's <a>Analysis of Boolean Functions</a>. </p>
+        <p>In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. I co-wrote a <a href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank">partial solution manual</a> for exercises in Ryan O'Donnell's <a>Analysis of Boolean Functions</a>. </p>
           
         <p>I have served as a sub-reviewer for ITCS 2027, STACS 2026.</p>
 
@@ -684,32 +708,31 @@
     <script src="javascripts/scale.fix.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        var selectedToggle = document.getElementById('research-selected-toggle');
-        var allToggle = document.getElementById('research-all-toggle');
+        var categoryToggles = Array.prototype.slice.call(document.querySelectorAll('.research-toggle'));
         var papers = Array.prototype.slice.call(document.querySelectorAll('.research-paper'));
 
-        function setView(view) {
+        function setCategory(category) {
           papers.forEach(function (paper) {
-            var shouldShow = view === 'all' || paper.getAttribute('data-selected') === 'true';
+            var categories = paper.getAttribute('data-categories').split(/\s+/);
+            var shouldShow = categories.indexOf(category) !== -1;
             paper.classList.toggle('is-hidden', !shouldShow);
           });
 
-          [selectedToggle, allToggle].forEach(function (toggle) {
-            toggle.classList.toggle('active', toggle.getAttribute('data-view') === view);
+          categoryToggles.forEach(function (toggle) {
+            var isActive = toggle.getAttribute('data-category') === category;
+            toggle.classList.toggle('active', isActive);
+            toggle.setAttribute('aria-pressed', isActive);
           });
         }
 
-        selectedToggle.addEventListener('click', function (event) {
-          event.preventDefault();
-          setView('selected');
+        categoryToggles.forEach(function (toggle) {
+          toggle.addEventListener('click', function (event) {
+            event.preventDefault();
+            setCategory(toggle.getAttribute('data-category'));
+          });
         });
 
-        allToggle.addEventListener('click', function (event) {
-          event.preventDefault();
-          setView('all');
-        });
-
-        setView('selected');
+        setCategory('all');
       });
     </script>
   </body>
