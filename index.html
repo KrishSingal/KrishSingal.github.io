@@ -313,18 +313,35 @@
         vertical-align: baseline;
       }
 
-      .research-bracket {
+      .research-filters::before,
+      .research-filters::after {
+        color: #222;
+        content: "[";
         color: #222;
         font-size: 0.9em;
         font-weight: 400;
         line-height: 0;
       }
 
-      .research-separator {
+      .research-filters::after {
+        content: "]";
+        margin-left: auto;
+      }
+
+      .research-toggle:not([data-category="all"])::before {
         color: #222;
-        font-size: 0.75em;
+        content: "|";
+        font-size: 1em;
         line-height: 1.5;
         margin: 0 0.2em;
+      }
+
+      .research-heading-label {
+        display: inline;
+      }
+
+      .research-mobile-break {
+        display: none;
       }
 
       .research-toggle .research-label {
@@ -490,6 +507,34 @@
           padding:15px;
         }
 
+        .research-heading {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+        }
+
+        .research-heading-label {
+          flex-basis: 100%;
+        }
+
+        .research-filters {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-left: 0;
+          row-gap: 0.15em;
+        }
+
+        .research-mobile-break {
+          display: block;
+          flex-basis: 100%;
+          height: 0;
+        }
+
+        .research-toggle[data-category="combinatorics"]::before {
+          content: none;
+        }
+
         header ul {
           width:99%;
         }
@@ -578,7 +623,7 @@
           <li>Amazon Web Services (Fall 2026), applied scientist hosted by <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a></li>
         </ul> -->
 
-        <h3 style="margin-top: 10px; margin-bottom: 10px;">Research <span class="research-filters"><span class="research-bracket">[</span><a href="#" class="research-toggle active" data-category="all" aria-pressed="true"><span class="research-label">All</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="ml" aria-pressed="false"><span class="research-label">AI/ML</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="sublinear" aria-pressed="false"><span class="research-label">Sublinear Algorithms</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="combinatorics" aria-pressed="false"><span class="research-label">Combinatorics</span></a><span class="research-separator">|</span><a href="#" class="research-toggle" data-category="systems" aria-pressed="false"><span class="research-label">Systems</span></a><span class="research-bracket">]</span></span></h3>
+        <h3 class="research-heading" style="margin-top: 10px; margin-bottom: 10px;"><span class="research-heading-label">Research</span><span class="research-filters"><a href="#" class="research-toggle active" data-category="all" aria-pressed="true"><span class="research-label">All</span></a><a href="#" class="research-toggle" data-category="ml" aria-pressed="false"><span class="research-label">AI/ML</span></a><a href="#" class="research-toggle" data-category="sublinear" aria-pressed="false"><span class="research-label">Sublinear Algorithms</span></a><span class="research-mobile-break" aria-hidden="true"></span><a href="#" class="research-toggle" data-category="combinatorics" aria-pressed="false"><span class="research-label">Combinatorics</span></a><a href="#" class="research-toggle" data-category="systems" aria-pressed="false"><span class="research-label">Systems</span></a></span></h3>
 
 
         <p style="font-size: 0.85em; font-weight: 300; margin: -5px 0 4px;">Authors are ordered alphabetically unless otherwise noted ($\star$)</p>
