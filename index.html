@@ -103,6 +103,16 @@
       .paper-conference:hover {
         color: #9a5b45;
       }
+
+      .paper-resource,
+      .paper-resource:hover {
+        color: #8d5db4;
+      }
+
+      .award-recognition {
+        color: #8d5db4;
+      }
+
       .wrapper {
         width:1000px;
         margin:0 auto;
@@ -612,10 +622,7 @@
       </header>
 
       <section>
-        <p>I am a PhD student in the CS Theory Group at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>.   
-        </p>
-
-        <p>My research interests lie in designing algorithms to make modern machine learning systems more efficient and effective. Specifically, I have thought about the following questions</p>
+        <p>I am a PhD student in the CS Theory Group at the <a href="https://theory.cis.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I am extremely grateful to be advised by <a href="https://sites.google.com/site/erikwaing/home" target="_blank">Erik Waingarten</a> and <a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank">Sanjeev Khanna</a>. My research interests lie in designing algorithms to make modern machine learning systems more efficient and effective. Specifically, I have thought about the following questions</p>
         <ol class="intro-questions">
           <li><strong>Efficient computation for machine learning systems.</strong> Can we design fast and space-efficient algorithms to perform tasks fundamental to modern AI/ML systems, such as <i>attention</i>, <i>quantization</i>, <i>clustering</i>, and <i>graph sparsification</i>?</li>
           <li><strong>Self-improving machine learning systems.</strong> How can we enable modern agentic systems to continually learn from their experience and improve over time?</li>
@@ -623,7 +630,7 @@
 
         <!-- <p>I am also interested in the theoretical and empirical aspects of information retrieval.</p> -->
 
-        <p>I am currently a co-organizer of the <a href="https://theory.cis.upenn.edu/seminar/", target="_blank">Penn Theory Seminar</a>. Please reach out if you're interested in giving a talk!</p>
+        <p>Previously, I studied computer science and mathematics at <a href="https://theory.cs.columbia.edu/" target="_blank">Columbia University</a>, where I was fortunate to have been mentored by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank">Alexandr Andoni</a> and <a href="https://www.cs.columbia.edu/~xichen/Welcome.html" target="_blank"> Xi Chen</a>.</p>
 
         <!-- Recently, I have been thinking about devising efficient algorithms for (1) useful notions of vector quantization, (2) approximating the attention mechanism, (3) clustering high-dimensional data, and (4) constructing metric spanners. -->
 
@@ -679,7 +686,7 @@
         <div class="research-paper" data-categories="all selected sublinear">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2510.04918" target="_blank">A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams</a></p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cis.upenn.edu/~sanjeev/" target="_blank" class="author-link">Sanjeev Khanna</a>, <a href="https://apadaki.github.io/" target="_blank" class="author-link">Ashwin Padaki</a>, Krish Singal, <a href="https://sites.google.com/site/erikwaing/home" target="_blank" class="author-link">Erik Waingarten</a></p>
-          <p style="margin: 0 0 15px;"><a href="https://ieeexplore.ieee.org/document/11369178", class="paper-conference", target="_blank">FOCS 2025</a> &nbsp;&nbsp; [<a href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a>]</p>
+          <p style="margin: 0 0 15px;"><a href="https://ieeexplore.ieee.org/document/11369178", class="paper-conference", target="_blank">FOCS 2025</a> &nbsp;<a class="paper-resource" href="content/Streaming_Diameter_Long_Slides.pdf" target="_blank">Slides</a> &nbsp;<a class="paper-resource" href="https://www.youtube.com/watch?v=WkYa-_ALHDk" target="_blank">Video</a></p>
         </div>
 
         <!-- <hr class="section-divider" data-label="Systems/Security"> -->
@@ -687,7 +694,7 @@
         <div class="research-paper" data-categories="all selected systems">
           <p style="margin: 0 0 0;"><a class="paper-title" href="https://arxiv.org/abs/2208.14530" target="_blank">MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing</a>$^{\star}$</p>
           <p style="margin: 0 0 0; color: #000000;"><a href="https://www.cs.columbia.edu/~ass/" target="_blank" class="author-link">Abhishek Shah</a>, <a href="https://cse.hkust.edu.hk/~dongdong/" target="_blank" class="author-link">Dongdong She</a>, Samanway Sadhu, Krish Singal, Peter Coffman, <a href="https://www.cs.columbia.edu/~suman/" target="_blank" class="author-link">Suman Jana</a></p>
-          <p style="margin: 0 0 0;"><a href="https://dl.acm.org/doi/10.1145/3548606.3560648", class="paper-conference", target="_blank", style="color: #000000;">ACM CCS 2022</a> &nbsp <i>Honorable Mention for Best Paper Award</i> </p>
+          <p style="margin: 0 0 0;"><a href="https://dl.acm.org/doi/10.1145/3548606.3560648", class="paper-conference", target="_blank", style="color: #000000;">ACM CCS 2022</a> &nbsp;<span class="award-recognition">Honorable Mention for Best Paper Award</span></p>
         </div>
         
         <!-- <hr class="section-divider" data-label="Combinatorics"> -->
@@ -748,7 +755,9 @@
           <li>Analysis of Algorithms taught by <a href="https://www.engineering.columbia.edu/faculty-staff/directory/christos-papadimitriou" target="_blank">Christos Papadimitriou</a> (Spring 2023, Fall 2022), Columbia University</li>
         </ul>
 
-        <p>In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. I co-wrote a <a href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank">partial solution manual</a> for exercises in Ryan O'Donnell's <a>Analysis of Boolean Functions</a>. </p>
+        <p>In Fall 2023, I co-led a seminar on the Analysis of Boolean Functions as part of the <a href="https://columbia-ugtcs.github.io/fall2023.html" target="_blank">Columbia Undergraduate Learning Seminar in Theoretical Computer Science</a>. I co-wrote a <a href="projects/Analysis_of_Boolean_Functions_Solution_Manual__Collaboration_.pdf" target="_blank">partial solution manual</a> for exercises in Ryan O'Donnell's <a>Analysis of Boolean Functions</a>.</p>
+        
+        <!-- <p>I am currently a co-organizer of the <a href="https://theory.cis.upenn.edu/seminar/", target="_blank">Penn Theory Seminar</a>. Please reach out if you're interested in giving a talk!</p> -->
           
         <p>I have served as a sub-reviewer for ITCS 2027, STACS 2026.</p>
 
