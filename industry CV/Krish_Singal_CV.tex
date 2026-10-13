@@ -1,0 +1,236 @@
+\documentclass[10pt]{article}
+
+% ---- Page geometry (matched from template) ----
+\usepackage[letterpaper,
+            left=83.3pt, right=83.3pt,
+            top=67pt,    bottom=67pt]{geometry}
+
+% ---- Encoding ----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---- Colors & hyperlinks ----
+\usepackage[dvipsnames]{xcolor}
+\definecolor{customlinkcolor}{HTML}{000099}
+\usepackage[colorlinks=true,
+            urlcolor=customlinkcolor,
+            linkcolor=customlinkcolor,
+            citecolor=customlinkcolor]{hyperref}
+
+% ---- Table ----
+\usepackage{longtable}
+
+% ---- Lists ----
+\usepackage{enumitem}
+\setlist[itemize]{
+  itemsep=1.5pt,
+  parsep=0pt,
+  topsep=2pt,
+  partopsep=0pt,
+  leftmargin=2em,
+  labelsep=0.5em,
+  label=\scriptsize\textbullet
+}
+
+% ---- Misc ----
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---- Column widths ----
+\newlength{\lcol}\setlength{\lcol}{100pt}
+\newlength{\rcol}\setlength{\rcol}{\dimexpr\textwidth-\lcol\relax}
+
+% ---- Convenience: custom-colored bold (for pub titles & institutions) ----
+\newcommand{\bluebf}[1]{{\color{customlinkcolor}\textbf{#1}}}
+\newcommand{\sectionhead}[1]{\textsc{#1}}
+
+\begin{document}
+
+%=============================================================================
+% NAME + RULE
+%=============================================================================
+\noindent{\large\bfseries Krish Singal}
+
+\vspace{2pt}\noindent\rule{\textwidth}{0.4pt}\vspace{2pt}
+
+%=============================================================================
+% MAIN TABLE
+%=============================================================================
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\begin{longtable}{@{}p{\lcol}@{}p{\rcol}@{}}
+
+%---- Contact Information -----------------------------------------------------
+\sectionhead{Contact} &
+\texttt{Personal website:} \href{https://krishsingal.github.io}{https://krishsingal.github.io} \\
+& \texttt{LinkedIn:} \href{https://linkedin.com/in/krishsingal}{https://linkedin.com/in/krishsingal}\\
+& \texttt{GitHub:} \href{https://github.com/KrishSingal}{https://github.com/KrishSingal} \\
+& \texttt{Email Address:} \href{mailto:ksingal@engineering.upenn.edu}{ksingal@engineering.upenn.edu}
+\\[10pt]
+
+%---- Research Interests ------------------------------------------------------
+\sectionhead{Research \newline Interests} &
+My research interests lie in designing algorithms to make modern machine learning systems more efficient and effective. My work has been guided by these questions \par \smallskip
+\begin{enumerate}[leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt]
+  \item \textbf{Efficient computation for machine learning systems.} Can we design fast and space-efficient algorithms for tasks fundamental to modern AI/ML systems, such as \textit{attention}, \textit{quantization}, \textit{clustering}, and \textit{graph sparsification}?
+  \item \textbf{Self-improving machine learning systems.} How can we enable modern agentic systems to continually learn from their experience and improve over time?
+\end{enumerate}
+\\[2pt]
+
+%---- Education ---------------------------------------------------------------
+\sectionhead{Education} &
+\vspace{-0.5em}\bluebf{\href{https://theory.cis.upenn.edu/}{University of Pennsylvania}} \hfill 2024--2028 (Expected)
+\begin{itemize}
+  \item PhD Candidate in Computer Science
+  \item Advised by \href{https://sites.google.com/site/erikwaing/home}{Erik Waingarten} and \href{https://sanjeevkhanna.org/}{Sanjeev Khanna}
+\end{itemize}\\
+& \bluebf{\href{https://www.columbia.edu/}{Columbia University}} \hfill 2020--2024
+\begin{itemize}
+  \item Bachelor of Science in Computer Science, Magna Cum Laude
+\end{itemize} \\
+& \bluebf{\href{https://en.wikipedia.org/wiki/Dulles_High_School_(Sugar_Land,_Texas)}{Dulles High School}} \hfill 2016--2020
+\begin{itemize}
+  \item Class Salutatorian
+\end{itemize}
+\\[10pt]
+
+%---- Research Internships & Visits -------------------------------------------
+\sectionhead{Industry \newline Experience} &
+\textbf{Applied Scientist Intern, Amazon Web Services} \hfill Aug 2026 -- Present\par
+\vspace{0.15em}
+\textit{OpenSearch (Hosted by \href{https://theory.stanford.edu/~nmishra/}{Nina Mishra} and \href{https://talwagner.github.io/}{Tal Wagner})}\par
+\vspace{0.15em}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt, after=\vspace{0pt}]
+  \item Developing a memory system for self-improving agentic search
+\end{itemize}
+\\[2pt]
+& \textbf{Software Engineer Intern, Apple} \hfill May 2022 -- Aug 2022\par
+\vspace{0.15em}
+\textit{CoreMotion}\par
+\vspace{0.15em}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt, after=\vspace{0pt}]
+  \item Machine learning for on-device gesture detection
+\end{itemize}
+\\[2pt]
+& \textbf{Software Engineer Intern, Amazon Web Services} \hfill May 2021 -- Aug 2021\par
+\vspace{0.15em}
+\textit{AWS Config}\par
+\vspace{0.15em}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt, after=\vspace{0pt}]
+  \item Multi-tenant library for CloudWatch metric ingestion and dashboard display
+\end{itemize}
+\\[10pt]
+
+%---- Publications ------------------------------------------------------------
+\sectionhead{Selected \newline Publications} &
+\vspace{-0.5em} \bluebf{\href{https://arxiv.org/abs/2610.10135}{Attention via Black-Box Vector Search}} \\ [-0.9em]
+& Alexandr Andoni, Ashwin Padaki, Krish Singal, Stepan Zharkov.\\
+& \textbf{In Submission} \\[6pt]
+
+& \bluebf{\href{https://arxiv.org/abs/2606.00289}{Inner Product Aware Quantization: Provably Fast, Accurate, and Adaptive Algorithms}} \\
+& Krish Singal, Nathan White.\\
+& \textbf{Neural Information Processing Systems (NeurIPS) 2026} \quad \href{https://github.com/nathanllww/Inner-Product-Aware-Quantization}{Code Repo} \\[6pt]
+
+& \bluebf{\href{https://arxiv.org/abs/2510.04918}{A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams}}\\
+& Sanjeev Khanna, Ashwin Padaki, Krish Singal, Erik Waingarten.\\
+& \textbf{Foundations of Computer Science (FOCS) 2025} \\[6pt]
+
+& \bluebf{\href{https://arxiv.org/abs/2208.14530}{MC$^2$: Rigorous and Efficient Directed Greybox Fuzzing}}\\
+& Abhishek Shah, Dongdong She, Samanway Sadhu, Krish Singal,
+  Peter Coffman, Suman Jana.\\
+  
+& \textbf{Conference on Computer and Communications Security (CCS) 2022} \\
+&\textit{Honorable Mention for Best Paper Award} \\
+
+& \bluebf{\href{https://arxiv.org/abs/2609.26934}{Fast Geometric Spanners via Approximate Nearest Neighbor Search}} \\
+& Alexandr Andoni, Krish Singal, Manuel Paez, Tian Zhang.\\
+& \textbf{In Submission} \\[6pt]
+
+& \bluebf{\href{https://arxiv.org/abs/2609.19089}{A Near-Optimal Space Lower Bound for Euclidean Diameter Estimation in Dynamic Streams}} \\
+& Ashwin Padaki, Krish Singal, Erik Waingarten.\\
+& \textbf{Preprint} \\[6pt]
+
+\\[5pt]
+% & \bluebf{On the Size and Complexity of Scrambles} \\
+% & Seamus Connor, Steven DiSilvio, Sasha Kononova, Ralph Morrison, Krish Singal. \\
+% & In Submission. \\[6pt]
+% & \bluebf{The Gonality of Chess Graphs} \\
+% & Nila Cibu, Kexin Ding, Seamus Connor, Steven DiSilvio, Sasha Kononova,
+%   Chan Lee, Ralph Morrison, Krish Singal. \\
+% & In Submission.\\[6pt]
+% & \bluebf{Chip-Firing Games on Banana Trees} \\
+% & Marchelle Beougher, Nila Cibu, Kexin Ding, Seamus Connor, Steven DiSilvio,
+%   Kristin Heysse, Sasha Kononova, Chan Lee, Ralph Morrison, Krish Singal.\\
+% & In Submission.\\[6pt]
+
+
+%---- Talks -------------------------------------------------------------------
+\sectionhead{Talks} &
+\textcolor{customlinkcolor}{A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams}
+\begin{itemize}
+  \item Foundations of Computer Science (FOCS), December 2025
+  \item UPenn Theory Seminar, December 2025
+\end{itemize}\\ \\
+& \textcolor{customlinkcolor}{On the Size and Complexity of Scrambles}
+\begin{itemize}
+  \item Joint Mathematics Meetings (JMM), January 2024
+\end{itemize}
+\\ [5pt]
+
+%---- Teaching ----------------------------------------------------------------
+\sectionhead{Teaching} &
+I have served as a teaching assistant for the following course offerings \\
+& \begin{itemize}
+  \item Algorithms for Big Data, taught by \href{https://www.engineering.upenn.edu/~anindyad/}{Anindya De} and \href{https://sites.google.com/site/erikwaing/home}{Erik Waingarten} (Summer 2026, Spring 2026, Fall 2025)
+  \item Advanced Algorithms, taught by \href{https://www.cs.columbia.edu/~andoni/}{Alexandr Andoni} (Spring 2024)
+  \item Computational Complexity, taught by \href{https://www.henryyuen.net/}{Henry Yuen} (Fall 2023)
+  \item Analysis of Algorithms, taught by \href{https://www.engineering.columbia.edu/faculty-staff/directory/christos-papadimitriou}{Christos Papadimtriou} (Spring 2023, Fall 2022)
+\end{itemize} \\ \\
+ 
+
+%---- Service -------------------------------------------
+\sectionhead{Service} &
+\textbf{Seminars} \\
+& \begin{itemize}
+  \item Co-organizer of \href{https://theory.cis.upenn.edu/seminar/}{Penn Theory Seminar} (2026 - Present)
+  \item Co-led a seminar on the Analysis of Boolean Functions as part of the \href{https://columbia-ugtcs.github.io/fall2023.html}{Columbia Undergraduate Seminar in Theoretical Computer Science} (Fall 2023)
+\end{itemize} \\ [2pt]
+& \textbf{Conference sub-reviewer}\\
+& \begin{itemize}
+  \item ITCS 2027, STACS 2026
+\end{itemize} \\ [4pt]
+
+%---- Service -----------------------------------------------------------------
+% \sectionhead{Service} &
+% Subreviewer for STACS 2026.\\
+% & Mentor, Columbia Undergraduate Learning Seminar in TCS, 2023.
+% \\[10pt]
+
+\sectionhead{Coursework} 
+& Randomized Algorithms, Convex Optimization, Machine Learning Theory, Algorithms for Massive Data, Zero-Knowledge Proofs, Complexity Theory, Operating Systems, Distributed Systems, Quantum Computing.
+\\ \\
+
+
+%---- Honors & Awards ---------------------------------------------------------
+% \sectionhead{Honors \newline and \newline Awards} &
+% \begin{itemize}
+%   \item Jonathan M.\ Smith Fellowship Awardee, 2025, University of Pennsylvania
+%   \item NSF Graduate Research Fellowship Program Honorable Mention, 2024
+%   \item Tau Beta Pi Inductee, 2024
+% \end{itemize}
+% \\
+
+\sectionhead{Skills} 
+&\textit{ML Tooling}: PyTorch \\
+& \textit{Programming Languages}: C/C++, Python, Java, LaTeX, GoLang, Rust \\
+&\textit{Languages}: English (native, fluent), Hindi (full professional fluency), Spanish (full professional fluency)
+\\
+
+\end{longtable}
+
+\end{document}
