@@ -66,7 +66,7 @@ body.secondary-page {
 
 .site-profile {
   position: fixed;
-  top: 50px;
+  top: 62px;
   left: calc(50% - 450px);
   width: 320px;
   text-align: center;
@@ -168,6 +168,11 @@ site-profile {
   margin-bottom: 1rem;
 }
 
+.site-content > h3:first-child,
+.site-content > .research-heading:first-child h3 {
+  margin-top: 0;
+}
+
 .research-heading {
   display: flex;
   align-items: baseline;
@@ -261,7 +266,11 @@ site-profile {
 }
 
 .secondary-page .paper-resource {
-  color: #2e7d32;
+  color: #8d5db4;
+}
+
+.secondary-page a.paper-resource:hover {
+  background-color: #f1ebf6;
 }
 
 .paper-resource-separator {
@@ -291,11 +300,11 @@ site-profile {
   flex-direction: column;
   width: 220px;
   flex-shrink: 0;
-  color: #2e7d32;
+  color: #8d5db4;
 }
 
 .talk-venue {
-  color: #2e7d32;
+  color: #8d5db4;
 }
 
 @media screen and (max-width: 960px) {
